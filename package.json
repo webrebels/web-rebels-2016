@@ -18,11 +18,11 @@
   ],
   "homepage": "https://www.webrebels.org/",
   "scripts": {
-    "jshint": "jshint ./bin/*.js ./bin/**/*.js ./src/js/*.js ./gulpfile.js",
+    "eslint": "eslint .",
     "min": "gulp",
     "predeploy": "npm run-script min",
     "start": "node ./bin/server.js",
-    "test": "npm run jshint"
+    "test": "npm run eslint"
   },
   "contributors": [
     {
@@ -51,10 +51,10 @@
     "webrebels.org"
   ],
   "devDependencies": {
+    "eslint": "^1.6.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-uglify": "^1.4.1",
-    "jshint": "^2.8.0",
     "picturefill": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
