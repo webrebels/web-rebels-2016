@@ -7,6 +7,7 @@
   },
   "description": "The Web Rebels 2016 web site",
   "main": "./bin/server.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:webrebels/web-rebels-2016.git"
@@ -18,21 +19,26 @@
   ],
   "homepage": "https://www.webrebels.org/",
   "scripts": {
+    "eslint": "eslint .",
+    "min": "gulp",
     "predeploy": "npm run-script min",
-    "jshint": "jshint ./bin/*.js ./bin/**/*.js ./src/js/*.js ./gulpfile.js",
     "start": "node ./bin/server.js",
-    "min": "gulp"
+    "test": "npm run eslint"
   },
-  "contributors": [{
-    "name": "Trygve Lie",
-    "email": "post@trygve-lie.com"
-  }, {
-    "name": "Espen Dalløkken",
-    "email": "espen@dallokken.com"
-  }, {
-    "name": "Bodil Stokke",
-    "email": "bodil@bodil.tv"
-  }],
+  "contributors": [
+    {
+      "name": "Trygve Lie",
+      "email": "post@trygve-lie.com"
+    },
+    {
+      "name": "Espen Dalløkken",
+      "email": "espen@dallokken.com"
+    },
+    {
+      "name": "Bodil Stokke",
+      "email": "bodil@bodil.tv"
+    }
+  ],
   "engines": {
     "iojs": "2.0.x"
   },
@@ -46,28 +52,27 @@
     "webrebels.org"
   ],
   "devDependencies": {
-    "gulp": "latest",
-    "gulp-concat": "latest",
-    "gulp-minify-css": "latest",
-    "gulp-uglify": "latest",
-    "jshint": "latest",
-    "vinyl-buffer": "latest",
-    "vinyl-source-stream": "latest",
-    "picturefill": "2.x"
+    "eslint": "^1.6.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.4.1",
+    "picturefill": "^3.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "body": "5.x",
-    "body-parser": "1.x",
-    "browserify": "10.x",
-    "combined-stream": "1.0.x",
-    "compression": "1.x",
-    "convict": "0.7.x",
-    "express": "4.12.x",
-    "express-validator": "2.10.x",
-    "hbs": "3.x",
-    "helmet": "0.9.x",
-    "mandrill-api": "1.0.x",
-    "serve-static": "1.9.x",
-    "winston": "1.0.x"
+    "body": "^5.1.0",
+    "body-parser": "^1.14.1",
+    "browserify": "^11.2.0",
+    "combined-stream": "^1.0.5",
+    "compression": "^1.6.0",
+    "convict": "^1.0.1",
+    "express": "^4.13.3",
+    "express-validator": "^2.17.1",
+    "hbs": "^3.1.1",
+    "helmet": "^0.12.0",
+    "mandrill-api": "^1.0.45",
+    "serve-static": "^1.10.0",
+    "winston": "^1.0.2"
   }
 }
