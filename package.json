@@ -78,6 +78,8 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "serve-static": "^1.10.0",
-    "winston": "^1.0.2"
+    "winston": "^1.0.2",
+    "web-rebels-2012": "git://github.com/webrebels/web-rebels-2012#gh-pages",
+    "web-rebels-2013": "git://github.com/webrebels/web-rebels-2013#gh-pages"
   }
 }

@@ -83,6 +83,7 @@ if (config.get('env') === 'development') {
 }
 
 require('./routes/content')(app);
+require('./routes/archives')(app);
 
 var httpServer = http.createServer(app);
 module.exports = httpServer;
