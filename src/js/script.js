@@ -1,1 +1,1 @@
-console.log('w000t');
+'use strict';
