@@ -25,22 +25,17 @@
     "start": "node ./bin/server.js",
     "test": "npm run eslint"
   },
-  "contributors": [
-    {
-      "name": "Trygve Lie",
-      "email": "post@trygve-lie.com"
-    },
-    {
-      "name": "Espen Dalløkken",
-      "email": "espen@dallokken.com"
-    },
-    {
-      "name": "Bodil Stokke",
-      "email": "bodil@bodil.tv"
-    }
-  ],
+  "contributors": [{
+    "name": "Trygve Lie",
+    "email": "post@trygve-lie.com"
+  }, {
+    "name": "Espen Dalløkken",
+    "email": "espen@dallokken.com"
+  }, {
+    "name": "Bodil Stokke",
+    "email": "bodil@bodil.tv"
+  }],
   "engines": {
-    "iojs": "2.0.x",
     "node": "4.x.x"
   },
   "bugs": {
