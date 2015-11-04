@@ -7,13 +7,13 @@ var http                = require('http');
 var config              = require('../config');
 var log                 = require('./log.js');
 
-var helmet              = require('helmet');
-var express             = require('express');
 var bodyParser          = require('body-parser');
-var expressValidator    = require('express-validator');
 var compress            = require('compression')();
-var serveStatic         = require('serve-static');
+var express             = require('express');
+var expressValidator    = require('express-validator');
+var helmet              = require('helmet');
 var hbs                 = require('hbs');
+var serveStatic         = require('serve-static');
 
 var app                 = express();
 var middleSSL           = require('./middleware/ssl.js');
@@ -82,8 +82,9 @@ if (config.get('env') === 'development') {
     app.get('/js/app.js', routeAssets.appJs);
 }
 
-require('./routes/content')(app);
 require('./routes/archives')(app);
+
+require('./routes/content')(app);
 
 var httpServer = http.createServer(app);
 module.exports = httpServer;

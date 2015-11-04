@@ -1,6 +1,10 @@
 
+var vhost = require('vhost');
+var connect = require('connect');
+var servestatic = require('serve-static')
 
 module.exports = (app) => {
-  app.use('/2012', require('express').static('./node_modules/web-rebels-2012/'));
-  app.use('/2013', require('express').static('./node_modules/web-rebels-2013/'));
+  ['2012', '2013', '2014', '2015'].map((year) => {
+    app.use(vhost(`${year}.webrebels.org`, connect().use(servestatic(`./node_modules/web-rebels-${year}/`))));
+  });
 };
