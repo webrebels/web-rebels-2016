@@ -25,6 +25,7 @@ header {
 
 .menu-item {
    display: inline-block;
+   list-style: none;
 }
 
 .menu-item a {
