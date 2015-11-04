@@ -5,7 +5,6 @@
 var path                = require('path');
 var http                = require('http');
 var config              = require('../config');
-var log                 = require('./log.js');
 
 var bodyParser          = require('body-parser');
 var compress            = require('compression')();
