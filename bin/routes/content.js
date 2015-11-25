@@ -19,4 +19,11 @@ module.exports = (app) => {
           css: css
       });
   });
+  app.get('/scholarship', (req, res) => {
+      res.render('scholarship', {
+          pageTitle: 'Web Rebels Scholarship Programme',
+          header: 'penthouse',
+          css: css
+      });
+  });
 };
