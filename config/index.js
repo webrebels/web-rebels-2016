@@ -60,6 +60,22 @@ env: {
         default : false,
         env     : 'MANDRILL_API_KEY',
         arg     : 'mandrill-api-key'
+    },
+
+    stripeSecretApiKey: {
+        doc     : 'Stripe secret API key',
+        format  : '*',
+        default : false,
+        env     : 'STRIPE_SECRET_API_KEY',
+        arg     : 'stripe-secret-api-key'
+    },
+
+    stripePublishableApiKey: {
+        doc     : 'Stripe publishable API key',
+        format  : '*',
+        default : false,
+        env     : 'STRIPE_PUBLISH_API_KEY',
+        arg     : 'stripe-publishable-api-key'
     }
 
 });

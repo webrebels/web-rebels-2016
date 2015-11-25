@@ -25,16 +25,20 @@
     "start": "node ./bin/server.js",
     "test": "npm run eslint"
   },
-  "contributors": [{
-    "name": "Trygve Lie",
-    "email": "post@trygve-lie.com"
-  }, {
-    "name": "Espen Dalløkken",
-    "email": "espen@dallokken.com"
-  }, {
-    "name": "Bodil Stokke",
-    "email": "bodil@bodil.tv"
-  }],
+  "contributors": [
+    {
+      "name": "Trygve Lie",
+      "email": "post@trygve-lie.com"
+    },
+    {
+      "name": "Espen Dalløkken",
+      "email": "espen@dallokken.com"
+    },
+    {
+      "name": "Bodil Stokke",
+      "email": "bodil@bodil.tv"
+    }
+  ],
   "engines": {
     "node": "4.x.x"
   },
@@ -73,6 +77,7 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "serve-static": "^1.10.0",
+    "stripe": "^4.0.0",
     "vhost": "^3.0.2",
     "web-rebels-2012": "git://github.com/webrebels/web-rebels-2012#gh-pages",
     "web-rebels-2013": "git://github.com/webrebels/web-rebels-2013#gh-pages",
