@@ -16,6 +16,7 @@ var serveStatic = require('serve-static');
 
 var app = express();
 var middleSSL = require('./middleware/ssl.js');
+
 var routeCsp = require('./routes/csp.js');
 /*
 var openmic             = require('./routes/openmic.js');
@@ -89,8 +90,8 @@ if (config.get('env') === 'development') {
 }
 
 require('./routes/archives')(app);
-
 require('./routes/content')(app);
+require('./routes/donations')(app);
 
 var httpServer = http.createServer(app);
 module.exports = httpServer;
