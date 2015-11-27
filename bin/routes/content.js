@@ -19,6 +19,13 @@ module.exports = (app) => {
           css: css
       });
   });
+  app.get('/sponsors/packages', (req, res) => {
+      res.render('sponsors/packages', {
+          pageTitle: 'Web Rebels Sponsorship options 2016',
+          header: 'penthouse',
+          css: css
+      });
+  });
   app.get('/scholarship', (req, res) => {
       res.render('scholarship/index', {
           pageTitle: 'Web Rebels Scholarship Programme',
