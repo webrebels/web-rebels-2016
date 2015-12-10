@@ -1,35 +1,27 @@
-html {
-  background-color: white;
-  color: black;
-  font-size: 14px;
-}
-header {
-  text-align: center;
-}
-.visuallyhidden {
-  visibility: hidden;
-}
-.logo-img {
-  width: 200px;
-}
 
-.menu .menu-item a{
-  color: #000 !important;
-}
+/* components below the fold */
+
+/* Navigation in footer */
+
 .menu {
-  text-align: center;
-  list-style-type: none;
-  clear: both;
-  padding-left: 0;
+    list-style-type: none;
+    clear: both;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .menu-item {
-   display: inline-block;
-   list-style: none;
+    display: inline-block;
 }
 
 .menu-item a {
-   display: block;
-   padding: 0.75em 1em 0.5em;
-   color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    color: #fff !important;
+}
+
+.menu-item a:hover,
+.menu-item a:active {
+    background-color: #3c3c36;
+    transition: all 0.1s ease-in 0s;
 }

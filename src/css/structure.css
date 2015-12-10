@@ -1,0 +1,124 @@
+
+/* base */
+
+html {
+    background-color: #fff;
+    color: #3C3C36;
+    overflow-y: scroll;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: Monaco, monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* box-sizing */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* remove margins some margins and paddings */
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+figure,
+table, th, td, caption,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* shared spacing on stuff */
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+    margin-bottom: 1em;
+}
+
+ul, ol, dd {
+    margin-left: 2em;
+}
+
+/* hiding content ref http://snook.ca/s/992 */
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+
+/* layout */
+
+header {
+    border-top: 30px solid #8C291C;
+    padding: 40px 20px 20px 20px;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        width: 90%;
+        max-width: 900px;
+    }
+}
+
+footer {
+    background-color: #4F4F4A;
+    padding: 20px;
+    margin-top: 160px;
+}
+
+/* components */
+
+.logo {
+
+}
+
+.logo-img {
+    max-width: 300px;
+}
+
+.tagline {
+    font-size: 3em;
+    font-family: "Helvetica Neue Black", "Impact", Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    border-bottom: 5px solid #8C291C;
+    display: inline-block;
+}
