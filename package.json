@@ -63,7 +63,7 @@
   "dependencies": {
     "body": "^5.1.0",
     "body-parser": "^1.14.1",
-    "browserify": "^11.2.0",
+    "browserify": "^12.0.0",
     "combined-stream": "^1.0.5",
     "compression": "^1.6.0",
     "connect": "^3.4.0",
@@ -71,8 +71,8 @@
     "express": "^4.13.3",
     "express-validator": "^2.17.1",
     "finalhandler": "^0.4.0",
-    "hbs": "^3.1.1",
-    "helmet": "^0.12.0",
+    "hbs": "4.x",
+    "helmet": "^0.15.0",
     "mandrill-api": "^1.0.45",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
@@ -83,6 +83,6 @@
     "web-rebels-2013": "git://github.com/webrebels/web-rebels-2013#gh-pages",
     "web-rebels-2014": "git://github.com/webrebels/web-rebels-2014#gh-pages",
     "web-rebels-2015": "git://github.com/webrebels/web-rebels-2015#gh-pages",
-    "winston": "^1.0.2"
+    "winston": "^2.0.2"
   }
 }
