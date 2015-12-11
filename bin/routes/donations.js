@@ -15,7 +15,7 @@ module.exports = (app) => {
       });
   });
   app.post('/scholarship/donate', (req, res) => {
-    let stripe = require('stripe')(config.get('stripeSecretApiKey'));
+    //let stripe = require('stripe')(config.get('stripeSecretApiKey'));
 
     req.assert('email', 'You have to write an email').isEmail();
     req.assert('amount', 'You have to set an amount').notEmpty();
