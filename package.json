@@ -72,7 +72,7 @@
     "express-validator": "^2.17.1",
     "finalhandler": "^0.4.0",
     "hbs": "4.x",
-    "helmet": "^0.15.0",
+    "helmet": "^1.0.1",
     "mandrill-api": "^1.0.45",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
