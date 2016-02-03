@@ -99,7 +99,7 @@ a:focus {
     font-family: Impact, Arial, sans-serif;
     font-size: 42px;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin: 20px 0 12px 0;
 }
 
 .link {
