@@ -9,7 +9,7 @@ var css = fs.readFileSync(path.resolve(__dirname, '../..' + config.get(
 
 module.exports = (app) => {
   app.get('/', (req, res) => {
-    res.render('waiting', {
+    res.render('index', {
       pageTitle: 'Web Rebels ☠ Oslo ☠ June 2016',
       header: 'penthouse',
       css: css
