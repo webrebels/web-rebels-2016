@@ -22,8 +22,7 @@
     "eslint": "eslint .",
     "min": "gulp",
     "predeploy": "npm run-script min",
-    "start": "node ./bin/server.js",
-    "test": "npm run eslint"
+    "start": "node ./bin/server.js"
   },
   "contributors": [
     {
@@ -45,11 +44,6 @@
   "bugs": {
     "url": "https://github.com/webrebels/web-rebels-2016/issues"
   },
-  "licenses": [],
-  "domains": [
-    "www.webrebels.org",
-    "webrebels.org"
-  ],
   "devDependencies": {
     "eslint": "1.10.3",
     "gulp": "3.9.0",
