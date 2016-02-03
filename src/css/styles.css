@@ -22,6 +22,12 @@
 
 .menu-item a:hover,
 .menu-item a:active {
-    background-color: #3c3c36;
+    background-color: #8f4d91;
     transition: all 0.1s ease-in 0s;
+}
+
+footer {
+    background-color: #202020;
+    padding-top: 4em;
+    padding-bottom: 2em;
 }
