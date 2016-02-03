@@ -2,10 +2,10 @@
 
 'use strict';
 
-var path    = require('path');
-var fs      = require('fs');
-var convict = require('convict');
-var pckage  = require('../package.json');
+const path    = require('path');
+const fs      = require('fs');
+const convict = require('convict');
+const pckage  = require('../package.json');
 
 var conf = convict({
 env: {
