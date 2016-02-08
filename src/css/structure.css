@@ -72,6 +72,12 @@ a:focus {
     padding: 0 1em;
 }
 
+.wrapper--wide {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 1em;
+}
+
 .list-inline {
     margin: 0;
     padding: 0;
