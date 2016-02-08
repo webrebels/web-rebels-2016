@@ -134,13 +134,13 @@ header {
     padding-top: 50px;
 }
 
-.constructivism {
-    background: #202020 url(img/varvara-stepanova.png) no-repeat;
-    background-size: 100%;
-    padding: 50px 0 300px 0;
+.oslo {
+    background-color: #6B6B6B;
+    color: #fff;
+    padding: 2em 0;
 }
 
-.productivism {
+.grunerlokka {
     background-color: #202020;
     color: #fff;
     padding: 2em 0;

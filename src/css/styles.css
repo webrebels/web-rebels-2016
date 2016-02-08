@@ -1,31 +1,6 @@
 
 /* components below the fold */
 
-/* Navigation in footer */
-
-.menu {
-    list-style-type: none;
-    clear: both;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.menu-item {
-    display: inline-block;
-}
-
-.menu-item a {
-    display: block;
-    padding: 0.5em 1em;
-    color: #fff !important;
-}
-
-.menu-item a:hover,
-.menu-item a:active {
-    background-color: #8f4d91;
-    transition: all 0.1s ease-in 0s;
-}
-
 /* Speakers on the front page */
 
 .speakers {
@@ -102,4 +77,29 @@
 
 footer {
     background-color: #202020;
+}
+
+/* Navigation in footer */
+
+.menu {
+    list-style-type: none;
+    clear: both;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #fff !important;
+}
+
+.menu-item a:hover,
+.menu-item a:active {
+    background-color: #8f4d91;
+    transition: all 0.1s ease-in 0s;
 }
