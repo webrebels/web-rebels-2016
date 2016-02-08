@@ -26,7 +26,7 @@ html {
 
 body {
     font-size: 100%;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul,
@@ -325,7 +325,7 @@ header {
 
 .lh-solid { line-height: 1; }
 .lh-title { line-height: 1.3; }
-.lh-copy  { line-height: 1.6; }
+.lh-copy  { line-height: 1.7; }
 
 /* I can haz floats?! 
 Remember clearfix .cf on parent */
