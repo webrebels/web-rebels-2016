@@ -71,7 +71,7 @@
     "react": "0.14.7",
     "react-dom": "0.14.7",
     "serve-static": "1.10.2",
-    "stripe": "4.3.0",
+    "stripe": "4.4.0",
     "vhost": "3.0.2",
     "web-rebels-2012": "git://github.com/webrebels/web-rebels-2012#gh-pages",
     "web-rebels-2013": "git://github.com/webrebels/web-rebels-2013#gh-pages",
