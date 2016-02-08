@@ -29,6 +29,27 @@ module.exports = (app) => {
       css: css
     });
   });
+  app.get('/location', (req, res) => {
+    res.render('location', {
+      pageTitle: 'Web Rebel location 2016',
+      header: 'penthouse',
+      css: css
+    });
+  });
+  app.get('/tickets', (req, res) => {
+    res.render('tickets', {
+      pageTitle: 'Ticket Sales for Web Rebels 2016',
+      header: 'penthouse',
+      css: css
+    });
+  });
+  app.get('/speakers', (req, res) => {
+    res.render('speakers', {
+      pageTitle: 'TWeb Rebels Speakers 2016',
+      header: 'penthouse',
+      css: css
+    });
+  });
   app.get('/sponsors/packages', (req, res) => {
     res.render('sponsors/packages', {
       pageTitle: 'Web Rebels Sponsorship options 2016',
