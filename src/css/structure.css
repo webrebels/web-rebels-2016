@@ -18,7 +18,7 @@ https://github.com/tachyons-css/tachyons <333
 html {
     box-sizing: border-box;
     font-family: Monaco, Consolas, 'Lucida Console', monospace;
-    color: #333;
+    color: #202020;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -58,7 +58,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #222; 
+    color: #202020; 
 }
 
 
@@ -89,7 +89,7 @@ a:focus {
 .box {
     display: block;
     background-color: #fff;
-    color: #333;
+    color: #202020;
     padding: 1em 2em 0.5em 2em;
     margin-left: -1em;
     margin-bottom: 2em;
@@ -97,8 +97,8 @@ a:focus {
 
 .impact {
     font-family: Impact, Arial, sans-serif;
-    font-size: 42px;
-    margin: 25px 0 5px 0;
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
 }
 
 .link {

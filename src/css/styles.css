@@ -30,8 +30,7 @@
 
 .speakers {
     list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .speaker {
