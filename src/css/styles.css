@@ -103,3 +103,48 @@ footer {
     background-color: #8f4d91;
     transition: all 0.1s ease-in 0s;
 }
+
+/* Sponsors */
+
+.sponsors {
+   list-style-type: none;
+   padding-left: 0;
+   margin-right: -5px;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+}
+
+.sponsors li {
+   text-align: center;
+   width: 20%;
+}
+
+.sponsors a {
+   display: block;
+   line-height: 0.5;   /* or set a height? */
+   margin: 0 10px 5px 0;
+}
+
+.sponsors img {
+   margin-bottom: 0;
+}
+
+.sponsors a:hover img {
+   opacity: 0.9;
+}
+
+@media screen and (min-width: 1000px) {
+   .sponsors li {
+      width: auto;
+   }
+   .sponsors a {
+      margin: 0 20px 20px 0;
+   }
+}
