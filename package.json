@@ -45,7 +45,7 @@
     "url": "https://github.com/webrebels/web-rebels-2016/issues"
   },
   "devDependencies": {
-    "eslint": "1.10.3",
+    "eslint": "2.0.0",
     "gulp": "3.9.0",
     "gulp-concat": "2.6.0",
     "gulp-minify-css": "1.2.3",
