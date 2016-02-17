@@ -26,7 +26,7 @@ html {
 
 body {
     font-size: 100%;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul,
@@ -66,16 +66,21 @@ a:focus {
     Objects
 ------------------------------------------------------- */
 
-.wrapper {
-    margin: auto;
-    max-width: 800px;
+.wrapper,
+.wrapper--wide {
+    margin: 0 auto;
+    max-width: 90%;
     padding: 0 1em;
 }
 
-.wrapper--wide {
-    margin: auto;
-    max-width: 1200px;
-    padding: 0 1em;
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 800px;
+    }   
+
+    .wrapper--wide {
+        max-width: 1200px;
+    }
 }
 
 .list-inline {
@@ -96,22 +101,36 @@ a:focus {
     display: block;
     background-color: #fff;
     color: #202020;
-    padding: 1em 2em 0.5em 2em;
-    margin-left: -1em;
+    padding: 1em 1em 0.5em 1em;
     margin-bottom: 2em;
+}
+
+@media screen and (min-width: 800px) {
+    .box {
+        padding: 1em 2em 0.5em 2em;
+    }
 }
 
 .impact {
     font-family: Impact, Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
+    line-height: 1.2;
     margin-bottom: 0.25em;
 }
+
+@media screen and (min-width: 800px) {
+    .impact {
+        font-size: 2.5em;
+    }
+}
+
 
 .link {
     background-color: #8f4d91;
     color: #fff;
     display: inline-block;
-    padding: 0 1em;
+    padding: 5px 1em;
+    line-height: 1;
 }
 
 
@@ -122,16 +141,37 @@ a:focus {
 header {
     color: #fff;
     border-bottom: 30px solid #e2cf4a;
-    background: #202020 url(img/raised-fist.svg) no-repeat;
-    background-position: right 50px bottom;
-    background-size: 180px 240px;
+    background: #202020;
+    padding-bottom: 3em;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        background: #202020 url(img/raised-fist.svg) no-repeat;
+        background-position: right 50px bottom;
+        background-size: 150px 200px;
+    }
+}
+
+.homelink {
+    color: #fff;
+}
+
+.homelink:hover {
+    color: #E2CF4A;
 }
 
 .vulkan {
-    background: url(img/vulkan.svg) no-repeat;
-    background-position: left top;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    border-top: 30px solid #8f4d91;
+}
+
+@media screen and (min-width: 800px) {
+    .vulkan {
+        background: url(img/vulkan.svg) no-repeat;
+        background-position: left top;
+        background-size: contain;
+        background-size: 20%;
+    }
 }
 
 .oslo {
@@ -145,13 +185,6 @@ header {
     color: #fff;
     padding: 2em 0;
 }
-
-.logo {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 800px;
-}
-
 
 
 /* ------------------------------------------------------- 
@@ -289,13 +322,18 @@ header {
     Utilities and helper classes
 ------------------------------------------------------- */
 
-.mega  { font-size: 7rem; }
-.f1    { font-size: 3rem; }
-.f2    { font-size: 2rem; }
-.f3    { font-size: 1.5rem; }
-.f4    { font-size: 1.25rem; }
-.f5    { font-size: 1rem; }
-.small { font-size: .875rem; }
+.mega {font-size: 4em;}
+.f1 {font-size: 2em;}
+.f2 {font-size: 1.5em;}
+.f3 {font-size: 1.5em;}
+.f4 {font-size: 1.25em;}
+.f5 {font-size: 1em;}
+.small {font-size: .875em;}
+
+@media screen and (min-width: 800px) {
+    .mega {font-size: 7em;}
+    .f1 {font-size: 3em;}
+}
 
 .tl  { text-align: left; }
 .tr  { text-align: right; }

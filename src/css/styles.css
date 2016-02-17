@@ -123,12 +123,11 @@ footer {
 
 .sponsors li {
    text-align: center;
-   width: 20%;
+   width: 50%;
 }
 
 .sponsors a {
    display: block;
-   line-height: 0.5;   /* or set a height? */
    margin: 0 10px 5px 0;
 }
 
@@ -137,10 +136,10 @@ footer {
 }
 
 .sponsors a:hover img {
-   opacity: 0.9;
+   opacity: 0.8;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
    .sponsors li {
       width: auto;
    }
