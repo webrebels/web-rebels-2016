@@ -1,33 +1,28 @@
-/* jshint node: true, strict: true */
-
 'use strict';
 
-var path = require('path');
-var http = require('http');
-var config = require('../config');
+const path        = require('path');
+const http        = require('http');
 
-var bodyParser = require('body-parser');
-var compress = require('compression')();
-var express = require('express');
-var expressValidator = require('express-validator');
-var helmet = require('helmet');
-var hbs = require('hbs');
-var serveStatic = require('serve-static');
+const bodyParser  = require('body-parser');
+const compress    = require('compression')();
+const express     = require('express');
+const validator   = require('express-validator');
+const helmet      = require('helmet');
+const hbs         = require('hbs');
+const serveStatic = require('serve-static');
 
-var app = express();
-var middleSSL = require('./middleware/ssl.js');
+const app         = express();
 
-var routeCsp = require('./routes/csp.js');
-/*
-var openmic             = require('./routes/openmic.js');
-var scholarship         = require('./routes/scholarship.js');
-*/
-var routeAssets = require('./routes/assets.js');
+const config      = require('../config');
+const middleSSL   = require('./middleware/ssl.js');
+const routeCsp    = require('./routes/csp.js');
+const routeAssets = require('./routes/assets.js');
 
-http.globalAgent.maxSockets = Infinity;
 
 app.disable('x-powered-by');
 app.enable('trust proxy');
+
+
 
 app.use(middleSSL.ensure);
 app.use(compress);
@@ -38,6 +33,7 @@ app.use(serveStatic(path.resolve(__dirname, '..' + config.get('docRoot')), {
 hbs.registerPartials(path.resolve(__dirname, '../views/partials/'));
 app.set('view engine', 'hbs');
 app.set('views', path.resolve(__dirname, '../views/'));
+
 
 app.use(helmet.hsts({
   maxAge: 15724800000, // 26 weeks
@@ -74,11 +70,7 @@ app.post('/api/v1/csp', routeCsp);
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-app.use(expressValidator());
-/*
-app.post('/api/v1/openmic', openmic);
-app.post('/api/v1/scholarship', scholarship);
-*/
+app.use(validator());
 
 app.get('/admin/ping', (req, res) => {
   res.status(200).send('OK');
@@ -92,5 +84,4 @@ if (config.get('env') === 'development') {
 require('./routes/content')(app);
 require('./routes/donations')(app);
 
-var httpServer = http.createServer(app);
-module.exports = httpServer;
+const httpServer = module.exports = http.createServer(app);

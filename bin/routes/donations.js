@@ -1,10 +1,10 @@
 'use strict';
 
-var fs                  = require('fs');
-var path                = require('path');
-var config              = require('../../config');
+const fs      = require('fs');
+const path    = require('path');
+const config  = require('../../config');
 
-var css = fs.readFileSync(path.resolve(__dirname, '../..' + config.get('docRoot') + '/css/structure.css'), {encoding:'utf8'});
+const css = fs.readFileSync(path.resolve(__dirname, '../..' + config.get('docRoot') + '/css/structure.css'), {encoding:'utf8'});
 
 module.exports = (app) => {
   app.get('/scholarship/donate', (req, res) => {

@@ -2,8 +2,8 @@
 
 'use strict';
 
-var body    = require('body/json');
-var log     = require('../log.js');
+const body    = require('body/json');
+const log     = require('../log.js');
 
 
 module.exports = function(req, res){

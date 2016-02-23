@@ -2,10 +2,10 @@
 
 'use strict';
 
-var browserify      = require('browserify');
-var CombinedStream  = require('combined-stream');
-var path            = require('path');
-var fs              = require('fs');
+const browserify      = require('browserify');
+const CombinedStream  = require('combined-stream');
+const path            = require('path');
+const fs              = require('fs');
 
 module.exports.appJs = (req, res) => {
     res.writeHead(200, {'Content-Type' : 'application/javascript'});
