@@ -2,7 +2,8 @@
 
 const server  = require('./app.js');
 const config  = require('../config');
-const log     = require('./log.js');
+const bole    = require('bole');
+const log     = bole('server');
 
 server.listen(config.get('httpServerPort'), () => {
     log.info('Web Rebels website running at http://localhost:' + config.get('httpServerPort') + '/');
@@ -11,10 +12,8 @@ server.listen(config.get('httpServerPort'), () => {
     log.info('serving static files from ' + config.get('docRoot'));
 });
 
-process.on('uncaughtException', (err) => {
-    log.error('shutdown - server taken down by force due to a uncaughtException');
-    log.error(err.message);
-    log.error(err.stack);
+process.on('uncaughtException', (error) => {
+    log.error(error, 'shutdown - server taken down by force due to a uncaughtException');
     server.close();
     process.nextTick(() => {
         process.exit(1);

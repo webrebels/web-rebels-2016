@@ -46,14 +46,6 @@ env: {
         arg     : 'log-console-level'
     },
 
-    logConsoleSilent: {
-        doc     : 'If the console transport log should be silent or not',
-        format  : '*',
-        default : false,
-        env     : 'NODE_LOG_CONSOLE_SILENT',
-        arg     : 'log-console-silent'
-    },
-
     mandrillApiKey: {
         doc     : 'The Mandrill API key',
         format  : '*',

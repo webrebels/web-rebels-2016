@@ -1,15 +1,14 @@
-/* jshint node: true, strict: true */
-
 'use strict';
 
-const body    = require('body/json');
-const log     = require('../log.js');
+const body  = require('body/json');
+const bole  = require('bole');
+const log   = bole('csp');
 
 
-module.exports = function(req, res){
-    body(req, res, {}, function(err, bodyObj) {
-        if (err) {
-            log.error('Error parsing CSP violation report', err);
+module.exports = (req, res, next) => {
+    body(req, res, {}, (error, bodyObj) => {
+        if (error) {
+            log.error(error, 'Error parsing CSP violation report');
             res.status(500).send("Internal server error");
             return;
         }

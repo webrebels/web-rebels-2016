@@ -10,19 +10,41 @@ const validator   = require('express-validator');
 const helmet      = require('helmet');
 const hbs         = require('hbs');
 const serveStatic = require('serve-static');
+const bole        = require('bole');
 
 const app         = express();
 
 const config      = require('../config');
 const middleSSL   = require('./middleware/ssl.js');
 const routeCsp    = require('./routes/csp.js');
-const routeAssets = require('./routes/assets.js');
 
+
+
+// Configure logging
+
+bole.output({
+    level: config.get('logConsoleLevel'),
+    stream: process.stdout
+});
+
+
+
+// Configure application
 
 app.disable('x-powered-by');
 app.enable('trust proxy');
 
 
+
+// Set up template engine
+
+hbs.registerPartials(path.resolve(__dirname, '../views/partials/'));
+app.set('view engine', 'hbs');
+app.set('views', path.resolve(__dirname, '../views/'));
+
+
+
+// Set middleware
 
 app.use(middleSSL.ensure);
 app.use(compress);
@@ -30,9 +52,6 @@ app.use(serveStatic(path.resolve(__dirname, '..' + config.get('docRoot')), {
   maxAge: '30d'
 }));
 
-hbs.registerPartials(path.resolve(__dirname, '../views/partials/'));
-app.set('view engine', 'hbs');
-app.set('views', path.resolve(__dirname, '../views/'));
 
 
 app.use(helmet.hsts({
