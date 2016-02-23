@@ -39,7 +39,7 @@
     }
   ],
   "engines": {
-    "node": "5.5.0"
+    "node": "5.7.0"
   },
   "bugs": {
     "url": "https://github.com/webrebels/web-rebels-2016/issues"
@@ -56,12 +56,12 @@
   },
   "dependencies": {
     "body": "5.1.0",
-    "body-parser": "1.14.2",
+    "body-parser": "1.15.0",
     "browserify": "13.0.0",
     "combined-stream": "1.0.5",
     "compression": "1.6.1",
     "connect": "3.4.1",
-    "convict": "1.1.0",
+    "convict": "1.1.2",
     "express": "4.13.4",
     "express-validator": "2.19.1",
     "finalhandler": "0.4.1",
