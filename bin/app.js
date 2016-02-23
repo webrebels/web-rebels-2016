@@ -76,10 +76,15 @@ app.get('/admin/ping', (req, res) => {
   res.status(200).send('OK');
 });
 
+
+
+// Set up routes only used in development
+
 if (config.get('env') === 'development') {
-  app.get('/css/app-2016.css', routeAssets.appCss);
-  app.get('/js/app-2016.js', routeAssets.appJs);
+    app.use(require('./routes/assets.js'));
 }
+
+
 
 require('./routes/content')(app);
 require('./routes/donations')(app);
