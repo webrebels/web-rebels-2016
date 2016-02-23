@@ -89,7 +89,6 @@ if (config.get('env') === 'development') {
   app.get('/js/app-2016.js', routeAssets.appJs);
 }
 
-require('./routes/archives')(app);
 require('./routes/content')(app);
 require('./routes/donations')(app);
 
