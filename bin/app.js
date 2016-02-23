@@ -15,8 +15,9 @@ const bole        = require('bole');
 const app         = express();
 
 const config      = require('../config');
-const middleSSL   = require('./middleware/ssl.js');
-const routeCsp    = require('./routes/csp.js');
+const middleware  = require('./middleware.js');
+const routes      = require('./routes.js');
+const pages       = require('./pages.js');
 
 
 
@@ -46,12 +47,15 @@ app.set('views', path.resolve(__dirname, '../views/'));
 
 // Set middleware
 
-app.use(middleSSL.ensure);
+app.use(middleware.ssl);
 app.use(compress);
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(validator());
 app.use(serveStatic(path.resolve(__dirname, '..' + config.get('docRoot')), {
   maxAge: '30d'
 }));
-
 
 
 app.use(helmet.hsts({
@@ -70,12 +74,11 @@ app.use(helmet.csp({
   imgSrc: ["'self'", "data:", "server.arcgisonline.com",
     "ssl.google-analytics.com"
   ],
-  frameSrc: ["eventbrite.com", "www.eventbrite.com"],
   objectSrc: ["'self'", "professional.player.qbrick.com"],
   fontSrc: ["'self'"],
   connectSrc: ["*"],
   sandbox: ['allow-forms', 'allow-scripts'],
-  reportUri: '/api/v1/csp',
+  reportUri: '/admin/csp',
   /*reportOnly: true, // set to true if you only want to report errors*/
   setAllHeaders: true, // set to true if you want to set all headers
   safari5: false // set to true if you want to force buggy CSP in Safari 5
@@ -84,28 +87,21 @@ app.use(helmet.csp({
 
 
 // Set up routes
-app.post('/api/v1/csp', routeCsp);
 
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-app.use(validator());
-
-app.get('/admin/ping', (req, res) => {
-  res.status(200).send('OK');
-});
+app.get('/admin/ping', routes.ping);
+app.post('/admin/csp', routes.csp);
+app.use(pages);
 
 
 
 // Set up routes only used in development
 
 if (config.get('env') === 'development') {
-    app.use(require('./routes/assets.js'));
+    app.use(require('./assets.js'));
 }
 
 
 
-require('./routes/content')(app);
-require('./routes/donations')(app);
+// Set up http server
 
 const httpServer = module.exports = http.createServer(app);

@@ -5,7 +5,8 @@ const bole  = require('bole');
 const log   = bole('csp');
 
 
-module.exports = (req, res, next) => {
+
+module.exports.csp = (req, res, next) => {
     body(req, res, {}, (error, bodyObj) => {
         if (error) {
             log.error(error, 'Error parsing CSP violation report');
@@ -15,4 +16,10 @@ module.exports = (req, res, next) => {
         log.warn('csp - ' + JSON.stringify(bodyObj, null, 2));
         res.status(200).send('OK');
     });
+};
+
+
+
+module.exports.ping = (req, res, next) => {
+    res.status(200).send('OK');
 };
