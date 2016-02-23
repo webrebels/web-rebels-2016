@@ -86,10 +86,15 @@ app.use(helmet.csp({
 
 
 
-// Set up routes
+// Set up system routes
 
 app.get('/admin/ping', routes.ping);
 app.post('/admin/csp', routes.csp);
+
+
+
+// Set up all other routes
+
 app.use(pages);
 
 
