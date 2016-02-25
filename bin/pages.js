@@ -56,6 +56,14 @@ router.get('/location', (req, res, next) => {
     });
 });
 
+router.get('/travel', (req, res, next) => {
+    res.render('travel', {
+        pageTitle: 'Traveling to Web Rebel 2016?',
+        header: 'penthouse',
+        css: css
+    });
+});
+
 
 
 router.get('/tickets', (req, res, next) => {
