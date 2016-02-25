@@ -106,7 +106,9 @@ router.get('/scholarship/donate', (req, res, next) => {
     });
 });
 
-
+router.get('/buytickets', (req, res, next) => {
+  res.redirect('https://ti.to/webrebels/2016');
+});
 
 router.post('/scholarship/donate', (req, res, next) => {
     //let stripe = require('stripe')(config.get('stripeSecretApiKey'));
