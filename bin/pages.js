@@ -46,6 +46,14 @@ router.get('/about', (req, res, next) => {
     });
 });
 
+router.get('/policies', (req, res, next) => {
+    res.render('policies', {
+        pageTitle: 'Policies for the Web Rebels Conference',
+        header: 'penthouse',
+        css: css
+    });
+});
+
 
 
 router.get('/location', (req, res, next) => {
