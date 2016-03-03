@@ -12,13 +12,9 @@ const css = fs.readFileSync(path.resolve(__dirname, '..' + config.get(
   encoding: 'utf8'
 });
 
-
-
 const router = module.exports = express.Router();
 
-
-
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
     res.render('index', {
         pageTitle: 'Web Rebels ☠ Oslo ☠ June 2016',
         header: 'penthouse',
@@ -26,9 +22,7 @@ router.get('/', (req, res, next) => {
     });
 });
 
-
-
-router.get('/home', (req, res, next) => {
+router.get('/home', (req, res) => {
     res.render('home', {
         pageTitle: 'Web Rebels ☠ Oslo ☠ June 2016',
         header: 'penthouse',
@@ -36,9 +30,7 @@ router.get('/home', (req, res, next) => {
     });
 });
 
-
-
-router.get('/about', (req, res, next) => {
+router.get('/about', (req, res) => {
     res.render('about', {
         pageTitle: 'About the Web Rebels Conference',
         header: 'penthouse',
@@ -46,7 +38,7 @@ router.get('/about', (req, res, next) => {
     });
 });
 
-router.get('/policies', (req, res, next) => {
+router.get('/policies', (req, res) => {
     res.render('policies', {
         pageTitle: 'Policies for the Web Rebels Conference',
         header: 'penthouse',
@@ -54,9 +46,7 @@ router.get('/policies', (req, res, next) => {
     });
 });
 
-
-
-router.get('/location', (req, res, next) => {
+router.get('/location', (req, res) => {
     res.render('location', {
         pageTitle: 'Web Rebel location 2016',
         header: 'penthouse',
@@ -64,7 +54,7 @@ router.get('/location', (req, res, next) => {
     });
 });
 
-router.get('/travel', (req, res, next) => {
+router.get('/travel', (req, res) => {
     res.render('travel', {
         pageTitle: 'Traveling to Web Rebel 2016?',
         header: 'penthouse',
@@ -72,9 +62,7 @@ router.get('/travel', (req, res, next) => {
     });
 });
 
-
-
-router.get('/tickets', (req, res, next) => {
+router.get('/tickets', (req, res) => {
     res.render('tickets', {
         pageTitle: 'Ticket Sales for Web Rebels 2016',
         header: 'penthouse',
@@ -82,9 +70,7 @@ router.get('/tickets', (req, res, next) => {
     });
 });
 
-
-
-router.get('/speakers', (req, res, next) => {
+router.get('/speakers', (req, res) => {
     res.render('speakers', {
         pageTitle: 'Web Rebels Speakers 2016',
         header: 'penthouse',
@@ -92,9 +78,15 @@ router.get('/speakers', (req, res, next) => {
     });
 });
 
+router.get('/sponsors', (req, res) => {
+    res.render('sponsors/index', {
+        pageTitle: 'Sponors of the 2016 Web Rebels',
+        header: 'penthouse',
+        css: css
+    });
+});
 
-
-router.get('/sponsors/packages', (req, res, next) => {
+router.get('/sponsors/packages', (req, res) => {
     res.render('sponsors/packages', {
         pageTitle: 'Web Rebels Sponsorship options 2016',
         header: 'penthouse',
@@ -102,9 +94,7 @@ router.get('/sponsors/packages', (req, res, next) => {
     });
 });
 
-
-
-router.get('/scholarship', (req, res, next) => {
+router.get('/scholarship', (req, res) => {
     res.render('scholarship/index', {
         pageTitle: 'Web Rebels Scholarship Programme',
         header: 'penthouse',
@@ -112,9 +102,7 @@ router.get('/scholarship', (req, res, next) => {
     });
 });
 
-
-
-router.get('/scholarship/donate', (req, res, next) => {
+router.get('/scholarship/donate', (req, res) => {
     res.render('scholarship/donate', {
         pageTitle: 'Donate to the Web Rebels Scholarship Programme',
         header: 'penthouse',
@@ -122,11 +110,11 @@ router.get('/scholarship/donate', (req, res, next) => {
     });
 });
 
-router.get('/buytickets', (req, res, next) => {
+router.get('/buytickets', (req, res) => {
   res.redirect('https://ti.to/webrebels/2016');
 });
 
-router.post('/scholarship/donate', (req, res, next) => {
+router.post('/scholarship/donate', (req, res) => {
     //let stripe = require('stripe')(config.get('stripeSecretApiKey'));
 
     req.assert('email', 'You have to write an email').isEmail();
