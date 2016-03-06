@@ -35,6 +35,11 @@
     transition: all 0.1s ease 0s;
 }
 
+.tickets-soldout {
+  color: #810000;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 600px) {
     .speakers {
         display: -ms-flexbox;
