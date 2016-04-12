@@ -110,6 +110,14 @@ router.get('/scholarship/donate', (req, res) => {
     });
 });
 
+router.get('/roadbook', (req, res) => {
+    res.render('roadbook', {
+        pageTitle: 'Web Rebels Speaker Roadbook',
+        header: 'penthouse',
+        css: css
+    });
+});
+
 router.get('/buytickets', (req, res) => {
   res.redirect('https://ti.to/webrebels/2016');
 });
