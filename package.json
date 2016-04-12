@@ -6,6 +6,7 @@
     "email": "kontor@webrebels.org"
   },
   "description": "The Web Rebels 2016 web site",
+  "mod-project-name": "web-rebels-www",
   "main": "./bin/server.js",
   "license": "MIT",
   "repository": {
