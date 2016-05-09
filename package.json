@@ -53,7 +53,7 @@
     "gulp-uglify": "1.5.3",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0",
-    "browserify": "13.0.0",
+    "browserify": "13.0.1",
     "combined-stream": "1.0.5"
   },
   "dependencies": {
