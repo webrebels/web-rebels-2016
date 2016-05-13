@@ -95,13 +95,14 @@ router.get('/sponsors/packages', (req, res) => {
 });
 
 router.get('/scholarship', (req, res) => {
-    res.render('scholarship/index', {
+  res.status(404).send(404);
+    /*res.render('scholarship/index', {
         pageTitle: 'Web Rebels Scholarship Programme',
         header: 'penthouse',
         css: css
-    });
+    });*/
 });
-
+/*
 router.get('/scholarship/donate', (req, res) => {
     res.render('scholarship/donate', {
         pageTitle: 'Donate to the Web Rebels Scholarship Programme',
@@ -109,7 +110,7 @@ router.get('/scholarship/donate', (req, res) => {
         css: css
     });
 });
-
+*/
 router.get('/roadbook', (req, res) => {
     res.render('roadbook', {
         pageTitle: 'Web Rebels Speaker Roadbook',
@@ -122,6 +123,7 @@ router.get('/buytickets', (req, res) => {
   res.redirect('https://ti.to/webrebels/2016');
 });
 
+/*
 router.post('/scholarship/donate', (req, res) => {
     //let stripe = require('stripe')(config.get('stripeSecretApiKey'));
 
@@ -138,3 +140,4 @@ router.post('/scholarship/donate', (req, res) => {
         res.render('scholarship/donateThanks');
     }
 });
+*/
