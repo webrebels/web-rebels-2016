@@ -94,6 +94,14 @@ router.get('/family', (req, res) => {
     });
 });
 
+router.get('/schedule', (req, res) => {
+    res.render('schedule', {
+        pageTitle: 'The Schedule for the Web Rebels 2016',
+        header: 'penthouse',
+        css: css
+    });
+});
+
 router.get('/sponsors', (req, res) => {
     res.render('sponsors/index', {
         pageTitle: 'Sponors of the 2016 Web Rebels',
