@@ -78,6 +78,30 @@ router.get('/speakers', (req, res) => {
     });
 });
 
+router.get('/oslo', (req, res) => {
+    res.render('oslo', {
+        pageTitle: 'Oslo survival guide for the Web Rebels',
+        header: 'penthouse',
+        css: css
+    });
+});
+
+router.get('/family', (req, res) => {
+    res.render('family', {
+        pageTitle: 'Information for families traveling to the Web Rebels',
+        header: 'penthouse',
+        css: css
+    });
+});
+
+router.get('/schedule', (req, res) => {
+    res.render('schedule', {
+        pageTitle: 'The Schedule for the Web Rebels 2016',
+        header: 'penthouse',
+        css: css
+    });
+});
+
 router.get('/sponsors', (req, res) => {
     res.render('sponsors/index', {
         pageTitle: 'Sponors of the 2016 Web Rebels',
