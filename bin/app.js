@@ -64,7 +64,7 @@ app.use(helmet.hsts({
   preload: true
 }));
 app.use(helmet.frameguard('deny'));
-app.use(helmet.csp({
+app.use(helmet.contentSecurityPolicy({
   defaultSrc: ["'none'"],
   scriptSrc: ["'self'", "data:", "'unsafe-inline'", "'unsafe-eval'",
     "www.google-analytics.com", "ssl.google-analytics.com",
