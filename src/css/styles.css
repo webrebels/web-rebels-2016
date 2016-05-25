@@ -183,6 +183,11 @@ footer {
 
 /* The conference schedule */
 
+.schedule-last-block {
+   margin-bottom: 3em;
+}
+
+
 .schedule {
    width: 100%;
    margin-bottom: 3em;
