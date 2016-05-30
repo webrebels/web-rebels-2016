@@ -109,7 +109,13 @@
 footer {
     background-color: #202020;
 }
-
+footer .tc a {
+  padding: 0.5em 1em;  
+}
+footer .tc a:hover, footer .tc a:focus {
+  background-color: #8f4d91;
+  color: #fff;
+}
 /* Navigation in footer */
 
 .menu {
@@ -213,11 +219,11 @@ footer {
 .schedule-break {
    border-top: 2px solid #efefed;
    border-bottom: 2px solid #efefed;
-   color: #8A8A86;  
+   color: #8A8A86;
 }
 
 .schedule-break > td {
-   padding: 0.5em 1em; 
+   padding: 0.5em 1em;
    font-style: italic;
 }
 
