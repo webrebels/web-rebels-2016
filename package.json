@@ -62,7 +62,7 @@
     "bole": "2.0.0",
     "compression": "1.6.2",
     "convict": "1.4.0",
-    "express": "4.13.4",
+    "express": "4.14.0",
     "express-validator": "2.20.5",
     "hbs": "4.0.0",
     "helmet": "2.1.1",
