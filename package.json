@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "body": "5.1.0",
-    "body-parser": "1.15.1",
+    "body-parser": "1.15.2",
     "bole": "3.0.1",
     "compression": "1.6.2",
     "convict": "1.4.0",
