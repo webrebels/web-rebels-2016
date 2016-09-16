@@ -65,7 +65,7 @@
     "express": "4.14.0",
     "express-validator": "2.20.8",
     "hbs": "4.0.0",
-    "helmet": "2.1.2",
+    "helmet": "2.2.0",
     "mandrill-api": "1.0.45",
     "serve-static": "1.11.1",
     "stripe": "4.9.0",
