@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Web Rebels Speakers 2016</title>
+    <meta property="og:title" content="Web Rebels Speakers 2016" />
+    <meta property="og:type" content="website" />
+    <!--meta property="og:url" content="" /-->
+    <meta property="og:image" content="https://www.webrebels.org/img/classof2014.jpg" />
+    <meta property="og:description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@web_rebels" />
+    <meta name="twitter:title" content="Web Rebels Speakers 2016" />
+    <meta name="twitter:description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology.">
+    <meta name="twitter:image" content="https://2014.webrebels.org/img/logo-webrebels.png" />
+    <!--meta name="twitter:url" content="" /-->
+    <meta name="description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology.">
+    <script>
+        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-26864429-1']); _gaq.push(['_setDomainName', 'webrebels.org']); _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>    <style>@charset "utf-8";
+
+/* ------------------------------------------------------- 
+
+CSS for Web Rebels 2016
+
+Inspired by:
+https://github.com/inuitcss/getting-started
+https://github.com/mhauken/start/
+https://github.com/tachyons-css/tachyons <333
+------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- 
+    Base / unclassed HTML-elements
+------------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+    font-family: Monaco, Consolas, 'Lucida Console', monospace;
+    color: #202020;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul,
+form, fieldset, legend, figure, table, th, td, caption, hr {
+    margin:  0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul {
+    margin-bottom: 1em;
+}
+
+ul, ol, dd {
+    margin-left: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #8f4d91;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #202020; 
+}
+
+
+/* ------------------------------------------------------- 
+    Objects
+------------------------------------------------------- */
+
+.wrapper,
+.wrapper--wide {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 800px;
+    }   
+
+    .wrapper--wide {
+        max-width: 1200px;
+    }
+}
+
+.list-inline {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .list-inline > li {
+    display: inline-block;
+}
+
+.list-bare {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}
+
+.box {
+    display: block;
+    background-color: #fff;
+    color: #202020;
+    padding: 1em 1em 0.5em 1em;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 800px) {
+    .box {
+        padding: 1em 2em 0.5em 2em;
+    }
+}
+
+.impact {
+    font-family: Impact, Arial, sans-serif;
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 0.25em;
+}
+
+@media screen and (min-width: 800px) {
+    .impact {
+        font-size: 2.5em;
+    }
+}
+
+
+.link {
+    background-color: #8f4d91;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 1em;
+    line-height: 1;
+}
+
+
+/* ------------------------------------------------------- 
+    Components
+------------------------------------------------------- */
+
+header {
+    color: #fff;
+    border-bottom: 30px solid #e2cf4a;
+    background: #202020;
+    padding-bottom: 3em;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        background: #202020 url(img/raised-fist.svg) no-repeat;
+        background-position: right 50px bottom;
+        background-size: 150px 200px;
+    }
+}
+
+.homelink {
+    color: #fff;
+}
+
+.homelink:hover {
+    color: #E2CF4A;
+}
+
+.vulkan {
+    border-top: 30px solid #8f4d91;
+}
+
+@media screen and (min-width: 800px) {
+    .vulkan {
+        background: url(img/vulkan.svg) no-repeat;
+        background-position: left top;
+        background-size: contain;
+        background-size: 20%;
+    }
+}
+
+.oslo {
+    background-color: #6B6B6B;
+    color: #fff;
+    padding: 2em 0;
+}
+
+.grunerlokka {
+    background-color: #202020;
+    color: #fff;
+    padding: 2em 0;
+}
+
+
+/* ------------------------------------------------------- 
+    Spacing from tachyons <3
+    http://tachyons.io/docs/layout/spacing/
+------------------------------------------------------- */
+
+.pan  {   padding: 0; }
+.paxs {   padding: .25rem; }
+.pas  {   padding: .5rem; }
+.pam  {   padding: 1rem; }
+.pal  {   padding: 2rem; }
+.paxl  {  padding: 4rem; }
+.paxxl {  padding: 8rem; }
+.paxxxl { padding: 16rem; }
+
+.pln  {   padding-left: 0; }
+.plxs {   padding-left: .25rem; }
+.pls  {   padding-left: .5rem; }
+.plm  {   padding-left: 1rem; }
+.pll  {   padding-left: 2rem; }
+.plxl  {  padding-left: 4rem; }
+.plxxl {  padding-left: 8rem; }
+.plxxxl { padding-left: 16rem; }
+
+.prn  {   padding-right: 0; }
+.prxs {   padding-right: .25rem; }
+.prs  {   padding-right: .5rem; }
+.prm  {   padding-right: 1rem; }
+.prl  {   padding-right: 2rem; }
+.prxl  {  padding-right: 4rem; }
+.prxxl {  padding-right: 8rem; }
+.prxxxl { padding-right: 16rem; }
+
+.pbn  {   padding-bottom: 0; }
+.pbxs {   padding-bottom: .25rem; }
+.pbs  {   padding-bottom: .5rem; }
+.pbm  {   padding-bottom: 1rem; }
+.pbl  {   padding-bottom: 2rem; }
+.pbxl  {  padding-bottom: 4rem; }
+.pbxxl {  padding-bottom: 8rem; }
+.pbxxxl { padding-bottom: 16rem; }
+
+.ptn  {   padding-top: 0; }
+.ptxs {   padding-top: .25rem; }
+.pts  {   padding-top: .5rem; }
+.ptm  {   padding-top: 1rem; }
+.ptl  {   padding-top: 2rem; }
+.ptxl  {  padding-top: 4rem; }
+.ptxxl {  padding-top: 8rem; }
+.ptxxxl { padding-top: 16rem; }
+
+.pvn {    padding-top: 0;       padding-bottom: 0; }
+.pvxs {   padding-top: .25rem;  padding-bottom: .25rem; }
+.pvs {    padding-top: .5rem;   padding-bottom: .5rem; }
+.pvm {    padding-top: 1rem;    padding-bottom: 1rem; }
+.pvl {    padding-top: 2rem;    padding-bottom: 2rem; }
+.pvxl {   padding-top: 4rem;    padding-bottom: 4rem; }
+.pvxxl {  padding-top: 8rem;    padding-bottom: 8rem; }
+.pvxxxl { padding-top: 16rem;   padding-bottom: 16rem; }
+
+.phn {    padding-left: 0;      padding-right: 0; }
+.phxs {   padding-left: .25rem; padding-right: .25rem; }
+.phs {    padding-left: .5rem;  padding-right: .5rem; }
+.phm {    padding-left: 1rem;   padding-right: 1rem; }
+.phl {    padding-left: 2rem;   padding-right: 2rem; }
+.phxl {   padding-left: 4rem;   padding-right: 4rem; }
+.phxxl {  padding-left: 8rem;   padding-right: 8rem; }
+.phxxxl { padding-left: 16rem;  padding-right: 16rem; }
+
+.man  {   margin: 0; }
+.maxs {   margin: .25rem; }
+.mas  {   margin: .5rem; }
+.mam  {   margin: 1rem; }
+.mal  {   margin: 2rem; }
+.maxl  {  margin: 4rem; }
+.maxxl {  margin: 8rem; }
+.maxxxl { margin: 16rem; }
+
+.mln  {   margin-left: 0; }
+.mlxs {   margin-left: .25rem; }
+.mls  {   margin-left: .5rem; }
+.mlm  {   margin-left: 1rem; }
+.mll  {   margin-left: 2rem; }
+.mlxl  {  margin-left: 4rem; }
+.mlxxl {  margin-left: 8rem; }
+.mlxxxl { margin-left: 16rem; }
+
+.mrn  {   margin-right: 0; }
+.mrxs {   margin-right: .25rem; }
+.mrs  {   margin-right: .5rem; }
+.mrm  {   margin-right: 1rem; }
+.mrl  {   margin-right: 2rem; }
+.mrxl  {  margin-right: 4rem; }
+.mrxxl {  margin-right: 8rem; }
+.mrxxxl { margin-right: 16rem; }
+
+.mbn  {   margin-bottom: 0; }
+.mbxs {   margin-bottom: .25rem; }
+.mbs  {   margin-bottom: .5rem; }
+.mbm  {   margin-bottom: 1rem; }
+.mbl  {   margin-bottom: 2rem; }
+.mbxl  {  margin-bottom: 4rem; }
+.mbxxl {  margin-bottom: 8rem; }
+.mbxxxl { margin-bottom: 16rem; }
+
+.mtn  {   margin-top: 0; }
+.mtxs {   margin-top: .25rem; }
+.mts  {   margin-top: .5rem; }
+.mtm  {   margin-top: 1rem; }
+.mtl  {   margin-top: 2rem; }
+.mtxl  {  margin-top: 4rem; }
+.mtxxl {  margin-top: 8rem; }
+.mtxxxl { margin-top: 16rem; }
+
+.mvn   {   margin-top: 0;      margin-bottom: 0rem; }
+.mvxs  {   margin-top: .25rem; margin-bottom: .25rem; }
+.mvs   {   margin-top: .5rem;  margin-bottom: .5rem; }
+.mvm   {   margin-top: 1rem;   margin-bottom: 1rem; }
+.mvl   {   margin-top: 2rem;   margin-bottom: 2rem; }
+.mvxl   {  margin-top: 4rem;   margin-bottom: 4rem; }
+.mvxxl  {  margin-top: 8rem;   margin-bottom: 8rem; }
+.mvxxxl  { margin-top: 16rem;  margin-bottom: 16rem; }
+
+.mhn   {   margin-left: 0;     margin-right: 0; }
+.mhs   {   margin-left: .5rem; margin-right: .5rem; }
+.mhm   {   margin-left: 1rem;  margin-right: 1rem; }
+.mhl   {   margin-left: 2rem;  margin-right: 2rem; }
+.mhxl   {  margin-left: 4rem;  margin-right: 4rem; }
+.mhxxl  {  margin-left: 8rem;  margin-right: 8rem; }
+.mhxxxl  { margin-left: 16rem; margin-right: 16rem; }
+
+
+/* ------------------------------------------------------- 
+    Utilities and helper classes
+------------------------------------------------------- */
+
+.mega {font-size: 4em;}
+.f1 {font-size: 2em;}
+.f2 {font-size: 1.5em;}
+.f3 {font-size: 1.5em;}
+.f4 {font-size: 1.25em;}
+.f5 {font-size: 1em;}
+.small {font-size: .875em;}
+
+@media screen and (min-width: 800px) {
+    .mega {font-size: 7em;}
+    .f1 {font-size: 3em;}
+}
+
+.tl  { text-align: left; }
+.tr  { text-align: right; }
+.tc  { text-align: center; }
+.tj  { text-align: justify; }
+
+.dn {     display: none; }
+.di {     display: inline; }
+.db {     display: block; }
+.dib {    display: inline-block; }
+
+.w1 {  width: 1em; }
+.w2 {  width: 2em; }
+.w3 {  width: 4em; }
+.w4 {  width: 8em; }
+.w5 {  width: 12em; }
+.w6 {  width: 16em; }
+
+.w-10 { width:  10%; }
+.w-20 { width:  20%; }
+.w-25 { width:  25%; }
+.w-33 { width:  33%; }
+.w-34 { width:  34%; }
+.w-40 { width:  40%; }
+.w-50 { width:  50%; }
+.w-60 { width:  60%; }
+.w-75 { width:  75%; }
+.w-80 { width:  80%; }
+.w-100 { width: 100%; }
+
+.w-auto { width: auto; }
+
+.lh-solid { line-height: 1; }
+.lh-title { line-height: 1.3; }
+.lh-copy  { line-height: 1.7; }
+
+/* I can haz floats?! 
+Remember clearfix .cf on parent */
+
+.fl { float: left;  display: inline; }
+.fr { float: right; display: inline; }
+.fn { float: none; }
+
+
+/* Clearfix 
+ref http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.cf:before,
+.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf {       *zoom: 1; }
+
+
+/* Vertical align text and inline elements */
+
+.v-base     { vertical-align: baseline; }
+.v-sub      { vertical-align: sub; }
+.v-sup      { vertical-align: super; }
+.v-txt-top  { vertical-align: text-top; }
+.v-txt-btm  { vertical-align: text-bottom; }
+.v-mid      { vertical-align: middle; }
+.v-top      { vertical-align: top; }
+.v-btm      { vertical-align: bottom; }
+</style>
+    <script>document.createElement('picture');</script>
+    <script async="true" defer="true" src="js/app-2016.js"></script>
+</head>
+
+  <header class="">
+    <div class="vulkan">
+      <div class="wrapper tc">
+        <h1 class="mega impact mbn ptl"><a href="index.html" class="homelink">Web Rebels</a></h1>
+        <h2 class="f2 mbn">2–3 June 2016 / Oslo, Norway</h2>
+      </div>
+    </div>
+  </header>
+  <div class="">
+    <div class="wrapper pvxl">
+
+      <h2 class="impact">Meet our speakers!</h2>
+      <p>Two days, one track, 18 speakers with 17 talks.<br>
+        Here are the speakers announced so far:</p>
+      <ul class="list-bare rebels">
+
+        <li class="cf">
+          <div class="">
+            <a name="juanpabloburitica"></a>
+            <img class="rebel-img" src="img/rebels/juanpabloburitica.jpg" alt="Juan Pablo Buriticá">
+            <h3 class="impact">Juan Pablo Buriticá</h3>
+            <p>
+            Juan Pablo Buriticá is the VP of Engineering at ride.com where he leads a distributed team throughout the US and Latin America that is working to reinvent how people commute to work and take 1 million cars of the road.
+            </p>
+            <p>
+            Juan Pablo has built effective software engineering organizations by emphasizing Open Source software values, technical excellence, trust and empathy. He has organized five software engineering conferences, spoken at multiple events, and led the growth of Colombia’s JavaScript community, the largest Spanish-speaking JS community in the world with more than 4000 members
+            </p>
+            <h4 class="impact">How Long On That Ticket? - Proven Recipes That Enhance Collaboration</h4>
+            <p>
+            Programming can often feel like a solitarypursuit – it’s just you and your computer against the world – it’s easy to forget that you are working alongside a team of people to accomplish a project as a group.  Professional cooks do this every day, sometimes twice a day with shorter timeframes to feed hungry patrons. In this talk, Juan Pablo & Patricia sauté their way through communication recipes used every night in the fast paced world of cooks and kitchens to support each other as they collaborate on making great food. Let’s explore how engineering teams can implement them to whip up better software. 
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="ariastewart"></a>
+            <img class="rebel-img" src="img/rebels/ariastewart.jpg" alt="Aria Stewart">
+            <h3 class="impact">Aria Stewart</h3>
+            <p>
+            Aria Stewart is a software developer at npm. They love building open-ended systems where people come up with surprising ways to use it and things link together in new and unexpected ways.
+            </p>
+            <h4 class="impact">Radical Modularity</h4>
+            <p>What if we take modularity to the extreme? What is modularity? What new concepts come out if we radically change how we work, share, and build software?</p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="kennethauchenberg"></a>
+            <img class="rebel-img" src="img/rebels/kennethauchenberg.jpg" alt="Kenneth Auchenberg">
+            <h3 class="impact">Kenneth Auchenberg</h3>
+            <p>
+            Kenneth is a Program Manager, focused on DevTools and Remote Debugging at Microsoft, and is obsessed with tooling. He started the <a href="http://remotedebug.org/>RemoteDebug</a> project to unify remote debugging and lives in Vancouver, Canada. He’s the organizer of the <a href="http://coldfrontconf.cm/">ColdFront Conference</a> in Copenhagen, Denmark. Kenneth blogs occasionally at <a href="http://kenneth.io/">kenneth.io</a>, and tweets as <a href="http://twitter.com/auchenberg">@auchenberg</a>.
+            </p>
+            <h4 class="impact">DevTools for the Progressive Web</h4>
+            <p>
+            The Progressive Web is here, and it means our web apps will escape the browser tab and power the applications running on our phones, TVs and watches. But what does that mean for the developer tools we use every day? In this talk I’ll share our view on web tooling and the work we do to make it easier and more productive to build for the web.
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="mikaelbrevik"></a>
+            <img class="rebel-img" src="img/rebels/mikaelbrevik.jpg" alt="Mikael Brevik">
+            <h3 class="impact">Mikael Brevik</h3>
+            <p>
+            Mikael Brevik is a programmer. While he enjoys many other languages, he usually falls back to his real love; JavaScript. He likes to contribute to open source, and maintains a couple of popular JavaScript-libraries in his spare time. When he is not programming he organizes a JavaScript meetup in Trondheim and hosts a budding Norwegian JavaScript podcast.
+            </p>
+            <h4 class="impact">Breaking the Fourth Wall With JavaScript</h4>
+            <p>
+            The dawn of ES201* is around us, no doubt. But it seems as people are focusing more on the syntactic sugar and superficial changes to the language, and not on the more interesting semantic changes. Like JavaScript Proxy. With it, the language is more reflexive than ever. What does this mean and more importantly, what can we do with that? In this presentation we’ll see how we can do more meta programming in JavaScript and how we can use and exploit some of it’s properties to do fun, and sometimes stupid, implementations. 
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="andreasbovens"></a>
+            <img class="rebel-img" src="img/rebels/andreasbovens.jpg" alt="Andreas Bovens">
+            <h3 class="impact">Andreas Bovens</h3>
+            <p>
+            Andreas joined Opera Software in Tokyo in 2007, and moved to Oslo in 2009 to head up its developer relations team. After Opera's switch to Chromium, he worked as a product manager for browser extensions, rebuilding Opera's extension ecosystem from scratch, and since last year, he is product manager of Opera for Android. In this role, he's been working on making Opera support the technology stack powering progressive web apps, and he's talked about them at Edge Conf and the Chrome Dev Summit. He's a big believer in progressive web apps, and how they empower users and businesses by bringing native-like experiences to the web platform.
+            </p>
+            <h4 class="impact">Towards better apps: the what & why of progressive web apps</h4>
+            <p>
+            Progressive web apps are getting an increasing amount of attention in web dev circles, and deservedly so. This talk will cover the technologies underlying progressive web apps, and explain how these apps can make a difference for people worldwide.
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="daviddias"></a>
+            <img class="rebel-img" src="img/rebels/daviddias.jpg" alt="David Dias">
+            <h3 class="impact">David Dias</h3>
+            <p>
+            <a href="http://daviddias.me/">David Dias</a> is a P2P Software Engineer and Researcher at Protocol Labs, and one of the developers of <a href="http://ipfs.io/">IPFS</a>, the InterPlanetary FileSystem. Before he has worked on the security and web development industry at ^lift security. David holds a P2P M.Sc., having built webrtc-explorer, a P2P DHT using WebRTC specifically for the Web Platform for job execution and distribution. Currently, David is also an invited Professor at the University of Lisbon, having developed a new post graduation course on modern Web development.
+            </p>
+            <h4 class="impact">Unleash the Distributed Web</h4>
+            <p>
+            The Web, the platform that we love and learned to rely on, has converged to a centralised, failure prone, exclusive and censured platform. However, the Internet, the underlying network that connects every device together, is not the fault for how the Web platform has turned. 
+            </p>
+            <p>
+            We need to bring the distributed properties of the Internet back! That is why we, the IPFS community, are building the InterPlanetary Filesystem, a mountable and distributed file storage protocol that provides cryptographic versioning (never move the same piece of content twice), free deduplication (avoid hitting the server several times for the same data) and distributed discovery (make Web Apps work ‘offline’!). 
+            </p>
+            <p>
+            This talk will go through the design of IPFS and how we can build fully decentralised Web Applications using Web technologies, today!
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="jonmckay"></a>
+            <img class="rebel-img" src="img/rebels/jonmckay.jpg" alt="Jon McKay">
+            <h3 class="impact">Jon McKay</h3>
+            <p>
+            Jon is an engineer and entrepreneur who lives at the intersection of software and hardware. He co-founded Technical Machine just after college which produced a Node.js based microcontroller platform called Tessel. He continues to serve on the Tessel Steering Committee after the project transitioned to open-governance. In his spare time, he works on his motorcycle, rock climbs, and dreams about avocados that never get too ripe.
+            </p>
+            <h4 class="impact">The eternal struggle: Node.js in embedded devices</h4>
+            <p>
+            This talk walks through the Tessel Project's journey to build the best developer tools for running Node.js on embedded devices. Building Node capabilities into embedded devices empowers millions of web developers to get their hands dirty and solve problems in an entirely new and previously intimidating domain.
+            </p>
+            <p>
+            Over the past 3 years, the project has encountered countless roadblocks including but not limited to: embedded memory constraints, transpiling other languages, and the dreaded binary modules- all for the glory of running Node.js everywhere. This talk will walk through how we overcame those challenges and what's next for Node.js on embedded devices.
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="annevankesteren"></a>
+            <img class="rebel-img" src="img/rebels/annevankesteren.jpg" alt="Anne van Kesteren">
+            <h3 class="impact">Anne van Kesteren</h3>
+            <p>
+            Standards engineer employed by Mozilla. Furthers the web with the WHATWG community. Would love to learn from you all.
+            </p>
+            <h4 class="impact">Bytes, URLs, and origins</h4>
+            <p>
+            This talk covers various low-level primitives the web is build upon, their corresponding JavaScript API, and wider web platform impact. It also attempts to explain the same-origin policy and how you can help evolving it all further.
+            </p>
+          </div>
+        </li>
+
+        <li class="cf">
+          <div class="">
+            <a name="jamisondance"></a>
+            <img class="rebel-img" src="img/rebels/jamisondance.jpg" alt="Jamison Dance">
+            <h3 class="impact">Jamison Dance</h3>
+            <p>
+            Jamison Dance is a co-host of the JavaScript Jabber and Soft Skills Engineering podcasts and a friend to animals. He runs the Utah Orem JavaScript and Utah Elm Users meetups and the React Rally conference, builds open source education software at Kuali, and once spelled it `array.lenght`.
+            </p>
+            <h4 class="impact">Elm can make you a better JavaScript developer</h4>
+            <p>
+            Functional programming is one of the oldest ideas in computer science, but it is just beginning to invade front end development. The core of functional programing is group of simple but powerful ideas that can work together to make your programs easier to build, understand, debug, and refactor.
+            </p>
+            <p>
+            Elm is a functional programming language that runs in the browser, and is built on pure functions, immutable data, and a powerful type system. Learn how Elm can make you a better JavaScript developer, and maybe, just maybe, take the plunge in to trying Elm yourself. 
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="patriciarealini"></a>
+            <img class="rebel-img" src="img/rebels/patriciarealini.jpg" alt="Patricia Realini">
+            <h3 class="impact">Patricia Realini</h3>
+            <p>
+            <a href="http://www.patriciarealini.com">Patricia</a> is a software engineer, an artist and a woman in Los Angeles, CA. When she's not coding, you can find her recipe testing pies in the kitchen or "practicing" blind wine tasting.
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="joepettersson"></a>
+            <img class="rebel-img" src="img/rebels/joepettersson.jpg" alt="Joe Pettersson">
+            <h3 class="impact">Joe Pettersson</h3>
+            <p>
+            Joe's Engineering Lead at McKinsey Digital Labs. He writes, advises and speaks on engineering, technology, the web, entrepreneurship and building kick-ass products. He's been writing JavaScript since the late 1990's (which makes him feel really old) and has a passion for talking about it publically. He's half Swedish and half English, which means that while he loves herring, snow and flat-pack furniture; he also never performs adequatley at international football tournaments.
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="marikokosaka"></a>
+            <img class="rebel-img" src="img/rebels/marikokosaka.jpg" alt="Mariko Kosaka">
+            <h3 class="impact">Mariko Kosaka</h3>
+            <p>
+            Mariko is an engineer who loves data and knitting. When she is not making software at Scripto, she uses code to help her design textiles & organize a local JavaScript meetup in New York City called BrooklynJS.
+            </p>
+            <h4 class="impact">That's So Metal! - Mechanical Words Through the Ages</h4>
+            <p>
+            What do you imagine when you hear "letter press" or "Typesetting"? You might think of Gutenberg Bible or hip print shop in Brooklyn, but Typesetting machine attracted many engineer's creative curiosity long before everyone had own home printer or a website.
+            </p>
+            <p>
+            Typesetting machine was invented out of do "not repeat yourself" momentarily, and one of 1st machinery to be automated. Before we had computer screen, programmers were making domain specific language to print an image with code. Did you know Unix was used to operate typesetting machine in 70s? Ken Thompson even hacked on typesetter to create Emoji for his chess machine book! The base concept of the webpage we deal with everyday - using computer to format document - was once a exciting research field. Modern software like WYSIWIG editor would not exist if these creative minds didn't put ink on their fingers. Let's look back the part of computing history that allowed us to have HTML, web fonts and emoji and more!
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="danielstenberg"></a>
+            <img class="rebel-img" src="img/rebels/danielstenberg.jpg" alt="Daniel Stenberg">
+            <h3 class="impact">Daniel Stenberg</h3>
+            <p>
+              <a href="http://daniel.haxx.se/">Daniel Stenberg</a> is employed by Mozilla, participated in the HTTP/2 work within the IETF and has hands-on experience with several HTTP/2 implementations. He's perhaps most known as the maintainer and lead developer of <a href="https://curl.haxx.se/">curl</a> and libcurl. Author of <a href="http://daniel.haxx.se/http2">http2 explained</a>.
+            </p>
+            <h4 class="impact">HTTP/2 explained</h4>
+            <p>
+            HTTP/2 is the new version of the web's and the Internet's most important and widely used protocol. RFC 7540 shipped in May 2015 and is now getting deployed across the Internet in servers and clients. Daniel explains what it is, why it matters, how widespread the use already is and what might be up next in HTTP land.
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="soledadpenades"></a>
+            <img class="rebel-img" src="img/rebels/soledadpenades.jpg" alt="Soledad Penadés">
+            <h3 class="impact">Soledad Penadés</h3>
+            <p>
+            Devevangineer at Mozilla. Building real time audio+graphics experiments with JavaScript; breaking half the browsers in the process. It's fun!
+            </p>
+            <h4 class="impact">Real time front-end alchemy</h4>
+            <p>
+            As new features are added to the Web platform, the kind of experiences we can build become amazingly interactive and immersive--a huge leap forward from the static document based web of yore!
+            </p>
+            <p>
+            Nowadays we can access webcams and play 3D audio and graphics, all in real time and in the browser, but there was a missing piece: capturing and encoding! Most solutions involved either sending data to servers or porting C++ encoders to JavaScript, none of which were particularly efficient or desirable for privacy or performance reasons.
+            </p>
+            <p>
+            Thankfully there is a better way: the new and shiny MediaCapture API, and in this talk you will learn all about it. Streams will be no strangers to you anymore, and you might even be tempted to cross a few of them---just for fun!
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="justinsearls"></a>
+            <img class="rebel-img" src="img/rebels/justinsearls.jpg" alt="Justin Searls">
+            <h3 class="impact">Justin Searls</h3>
+            <p>Justin has a gift for stumbling upon all that is broken in the software industry, but is careful to avoid the cynicism that any of its problems are beyond fixing. He co-founded Test Double, a software agency of great people dedicated to making software that's better for businesses to manage, developers to work with, and customers to use.
+            </p>
+            <h4 class="impact">How to Stop Hating Your Tests</h4>
+            <p>
+            Most developers hate their team's test suites—and those who don't, probably should.
+            </p>
+            <p>
+            Testing is a secondary job when writing production systems, so we naturally put less planning and attention toward it. Our tests are in a state of arrested development: difficult to understand, unsafe to change, and so slow they undermine our productivity.
+            </p>
+            <p>
+            This talk works through the top 15 things people hate about their and what can be done to downgrade that hatred to something no worse than chillsome loathing.
+            </p>
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="matthewpodwysocki"></a>
+            <img class="rebel-img" src="img/rebels/matthewpodwysocki.jpg" alt="Matthew Podwysocki">
+            <h3 class="impact">Matthew Podwysocki</h3>
+            <p>Matthew Podwysocki is a Software Engineer and self-described Open
+             Sourcerer at Microsoft.  He currently works on the Reactive Extensions
+             for all platforms and the Thali Project exploring the Internet of Things
+             and Privacy.  He is passionate about open source, helping such efforts
+             as Microsoft support of Node.js.  He also spends his free time helping
+             teach the next generation of software developers through STEM outreach.
+            </p>
+            <h4 class="impact">Change the World With the Peer Web and Thali</h4>
+            <p>
+            How we can use JavaScript on our devices such as phones to change the world. From enabling those who don't have reliable internet or phone service to still be able to communicate, to protecting those in danger and protecting their identity. This all can be accomplished with the Thali Project, bringing back the peer web with our devices.
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="nolanlawson"></a>
+            <img class="rebel-img" src="img/rebels/nolanlawson.jpg" alt="Nolan Lawson">
+            <h3 class="impact">Nolan Lawson</h3>
+            <p>Nolan is a dual Android/web developer and co-maintainer of PouchDB. He's passionate about offline, performance, and pushing the boundaries of the mobile web.
+            </p>
+            <h4 class="impact">Progressive Web Apps: a love story</h4>
+            <p>
+            Why would an Android developer ever give up the raw power of native apps for something as weird and finicky as the web? In this talk, Nolan Lawson shares his journey as an Androidian-turned-webomancer, and why he thinks Progressive Web Apps are a compelling enough technology that other native developers should sit up and take note. 
+            </p>
+          </div>
+        </li>
+        
+        <li class="cf">
+          <div class="">
+            <a name="petergasston"></a>
+            <img class="rebel-img" src="img/rebels/petergasston.jpg" alt="Peter Gasston">
+            <h3 class="impact">Peter Gasston</h3>
+            <p>Peter is a veteran web developer who now works as a technologist at rehabstudio on projects for clients including Google and Facebook, and in partnership with some of the world’s biggest creative agencies. He’s the author of The Book of CSS3 and The Modern Web, and has written for Net Magazine, Smashing Magazine and A List Apart. In his spare time he ‘relaxes’ by reading voraciously, supporting Arsenal, and going on day trips to castles.
+            </p>
+            <h4 class="impact">Surveying the landscape: threats and opportunities for the web</h4>
+            <p>
+            From native apps to closed platforms to messenger bots, there are many threats to the influence and long-term health of the web. But perhaps its not time to give up on the browser just yet: the web could be sufficiently flexible to find new roles and new opportunities in the technology landscape of today and the near future.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+<footer class="ptxl pbm">
+  <div class="wrapper--wide">
+    <ul class="sponsors mbxl">
+      <li><a href="http://acando.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Acando"><img style="background-color:#FFF;width:200px;height:100px" src="img/sponsors/acando.svg" alt=""></a></li>
+      <li><a href="http://bouvet.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Bouvet"><img src="img/sponsors/bouvet.png" alt=""></a></li>
+      <li><a href="http://microsoft.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Microsoft"><img src="img/sponsors/microsoft.png" alt=""></a></li>
+      <li><a href="https://goo.gl/Z6VihS?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Schibsted"><img src="img/sponsors/schibsted_logo.png" width="200" height="100"alt="Schibsted logo"></a></li>
+      <li><a href="http://systek.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Systek"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/systek.svg" alt=""></a></li>
+      <li><a href="http://netliferesearch.com/?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Netlife Reseach"><img src="img/sponsors/netlife.png" alt=""></a></li>
+      <li><a href="http://bekk.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Bekk"><img src="img/sponsors/bekk.png" alt=""></a></li>
+      <li><a href="http://webstep.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Webstep"><img src="img/sponsors/webstep.png" alt=""></a></li>
+      <li><a href="http://appear.in?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="appear.in"><img src="img/sponsors/appearin.png" alt=""></a></li>
+      <li><a href="http://kodemaker.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Kodemaker"><img src="img/sponsors/kodemaker.png" alt=""></a></li>
+      <li><a href="http://knowit.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="KnowIt"><img src="img/sponsors/knowit.png" alt=""></a></li>
+      <li><a href="https://opbeat.com?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Opbeat"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/opbeat.svg" alt=""></a></li>
+      <li><a href="https://ride.com/?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Ride"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/ride.svg" alt=""></a></li>
+      <li><a href="https://www.mozilla.org/?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Mozilla"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/mozilla.svg" alt=""></a></li>
+      <li><a href="https://www.finn.no/apply-here?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Finn"><img style="background-color:#FFF;width:200px;height:100px" src="img/sponsors/finn.png" alt="Finn logo"></a></li>
+    </ul>
+    <ul class="menu tc">
+      <li class="menu-item"><a href="schedule.html">Schedule</a></li>
+      <li class="menu-item"><a href="location.html">Location</a></li>
+      <li class="menu-item"><a href="speakers.html">Speakers</a></li>
+      <li class="menu-item"><a href="sponsors.html">Sponsors</a></li>
+      <li class="menu-item"><a href="about.html">About</a></li>
+      <!--li class="menu-item"><a href="/tickets">Tickets</a></li-->
+      <li class="menu-item"></li>
+    </ul>
+    <ul class="menu tc">
+      <li class="menu-item"><a href="https://twitter.com/web_rebels">Twitter</a></li>
+      <li class="menu-item"><a href="http://lanyrd.com/2016/webrebels/">Lanyrd</a></li>
+      <li class="menu-item"><a href="http://flickr.com/webrebels">Photos</a></li>
+      <li class="menu-item"><a href="http://eepurl.com/bB12Ln">Newsletter</a></li>
+      <li class="menu-item"><a href="https://www.youtube.com/channel/UCM9cTs_C0PmTlHXTNrqTpnw">YouTube Channel</a></li>
+      <li class="menu-item"><a href="http://webrebels.tumblr.com">Tumblr</a></li>
+    </ul>
+  </div>
+  <p class="tc" style="color:white;">Web Rebels is part for the <a href="http://jsconf.com">JSConf family of events</a> and have a <a href="about.html#coc">Code of Conduct</a></p>
+  <ul class="menu tc">
+    <li class="menu-item tc"><p style="color:white;">Previous Web Rebels confs:</p></li>
+    <li class="menu-item"><a href="http://2012.webrebels.org/">2012</a></li>
+    <li class="menu-item"><a href="http://2013.webrebels.org/">2013</a></li>
+    <li class="menu-item"><a href="http://2014.webrebels.org/">2014</a></li>
+    <li class="menu-item"><a href="http://2015.webrebels.org/">2015</a></li>
+  </ul>
+</footer>
+
+<script>
+var cb = function() {
+    var l = document.createElement('link'); l.rel = 'stylesheet';
+    l.href = 'css/app-2016.css';
+    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(cb);
+else window.addEventListener('load', cb);
+</script>
+
+</body>
+</html>

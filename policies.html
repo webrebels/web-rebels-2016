@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Policies for the Web Rebels Conference</title>
+    <meta property="og:title" content="Policies for the Web Rebels Conference" />
+    <meta property="og:type" content="website" />
+    <!--meta property="og:url" content="" /-->
+    <meta property="og:image" content="https://www.webrebels.org/img/classof2014.jpg" />
+    <meta property="og:description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@web_rebels" />
+    <meta name="twitter:title" content="Policies for the Web Rebels Conference" />
+    <meta name="twitter:description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology.">
+    <meta name="twitter:image" content="https://2014.webrebels.org/img/logo-webrebels.png" />
+    <!--meta name="twitter:url" content="" /-->
+    <meta name="description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology.">
+    <script>
+        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-26864429-1']); _gaq.push(['_setDomainName', 'webrebels.org']); _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>    <style>@charset "utf-8";
+
+/* ------------------------------------------------------- 
+
+CSS for Web Rebels 2016
+
+Inspired by:
+https://github.com/inuitcss/getting-started
+https://github.com/mhauken/start/
+https://github.com/tachyons-css/tachyons <333
+------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- 
+    Base / unclassed HTML-elements
+------------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+    font-family: Monaco, Consolas, 'Lucida Console', monospace;
+    color: #202020;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul,
+form, fieldset, legend, figure, table, th, td, caption, hr {
+    margin:  0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul {
+    margin-bottom: 1em;
+}
+
+ul, ol, dd {
+    margin-left: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #8f4d91;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #202020; 
+}
+
+
+/* ------------------------------------------------------- 
+    Objects
+------------------------------------------------------- */
+
+.wrapper,
+.wrapper--wide {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 800px;
+    }   
+
+    .wrapper--wide {
+        max-width: 1200px;
+    }
+}
+
+.list-inline {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .list-inline > li {
+    display: inline-block;
+}
+
+.list-bare {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}
+
+.box {
+    display: block;
+    background-color: #fff;
+    color: #202020;
+    padding: 1em 1em 0.5em 1em;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 800px) {
+    .box {
+        padding: 1em 2em 0.5em 2em;
+    }
+}
+
+.impact {
+    font-family: Impact, Arial, sans-serif;
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 0.25em;
+}
+
+@media screen and (min-width: 800px) {
+    .impact {
+        font-size: 2.5em;
+    }
+}
+
+
+.link {
+    background-color: #8f4d91;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 1em;
+    line-height: 1;
+}
+
+
+/* ------------------------------------------------------- 
+    Components
+------------------------------------------------------- */
+
+header {
+    color: #fff;
+    border-bottom: 30px solid #e2cf4a;
+    background: #202020;
+    padding-bottom: 3em;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        background: #202020 url(img/raised-fist.svg) no-repeat;
+        background-position: right 50px bottom;
+        background-size: 150px 200px;
+    }
+}
+
+.homelink {
+    color: #fff;
+}
+
+.homelink:hover {
+    color: #E2CF4A;
+}
+
+.vulkan {
+    border-top: 30px solid #8f4d91;
+}
+
+@media screen and (min-width: 800px) {
+    .vulkan {
+        background: url(img/vulkan.svg) no-repeat;
+        background-position: left top;
+        background-size: contain;
+        background-size: 20%;
+    }
+}
+
+.oslo {
+    background-color: #6B6B6B;
+    color: #fff;
+    padding: 2em 0;
+}
+
+.grunerlokka {
+    background-color: #202020;
+    color: #fff;
+    padding: 2em 0;
+}
+
+
+/* ------------------------------------------------------- 
+    Spacing from tachyons <3
+    http://tachyons.io/docs/layout/spacing/
+------------------------------------------------------- */
+
+.pan  {   padding: 0; }
+.paxs {   padding: .25rem; }
+.pas  {   padding: .5rem; }
+.pam  {   padding: 1rem; }
+.pal  {   padding: 2rem; }
+.paxl  {  padding: 4rem; }
+.paxxl {  padding: 8rem; }
+.paxxxl { padding: 16rem; }
+
+.pln  {   padding-left: 0; }
+.plxs {   padding-left: .25rem; }
+.pls  {   padding-left: .5rem; }
+.plm  {   padding-left: 1rem; }
+.pll  {   padding-left: 2rem; }
+.plxl  {  padding-left: 4rem; }
+.plxxl {  padding-left: 8rem; }
+.plxxxl { padding-left: 16rem; }
+
+.prn  {   padding-right: 0; }
+.prxs {   padding-right: .25rem; }
+.prs  {   padding-right: .5rem; }
+.prm  {   padding-right: 1rem; }
+.prl  {   padding-right: 2rem; }
+.prxl  {  padding-right: 4rem; }
+.prxxl {  padding-right: 8rem; }
+.prxxxl { padding-right: 16rem; }
+
+.pbn  {   padding-bottom: 0; }
+.pbxs {   padding-bottom: .25rem; }
+.pbs  {   padding-bottom: .5rem; }
+.pbm  {   padding-bottom: 1rem; }
+.pbl  {   padding-bottom: 2rem; }
+.pbxl  {  padding-bottom: 4rem; }
+.pbxxl {  padding-bottom: 8rem; }
+.pbxxxl { padding-bottom: 16rem; }
+
+.ptn  {   padding-top: 0; }
+.ptxs {   padding-top: .25rem; }
+.pts  {   padding-top: .5rem; }
+.ptm  {   padding-top: 1rem; }
+.ptl  {   padding-top: 2rem; }
+.ptxl  {  padding-top: 4rem; }
+.ptxxl {  padding-top: 8rem; }
+.ptxxxl { padding-top: 16rem; }
+
+.pvn {    padding-top: 0;       padding-bottom: 0; }
+.pvxs {   padding-top: .25rem;  padding-bottom: .25rem; }
+.pvs {    padding-top: .5rem;   padding-bottom: .5rem; }
+.pvm {    padding-top: 1rem;    padding-bottom: 1rem; }
+.pvl {    padding-top: 2rem;    padding-bottom: 2rem; }
+.pvxl {   padding-top: 4rem;    padding-bottom: 4rem; }
+.pvxxl {  padding-top: 8rem;    padding-bottom: 8rem; }
+.pvxxxl { padding-top: 16rem;   padding-bottom: 16rem; }
+
+.phn {    padding-left: 0;      padding-right: 0; }
+.phxs {   padding-left: .25rem; padding-right: .25rem; }
+.phs {    padding-left: .5rem;  padding-right: .5rem; }
+.phm {    padding-left: 1rem;   padding-right: 1rem; }
+.phl {    padding-left: 2rem;   padding-right: 2rem; }
+.phxl {   padding-left: 4rem;   padding-right: 4rem; }
+.phxxl {  padding-left: 8rem;   padding-right: 8rem; }
+.phxxxl { padding-left: 16rem;  padding-right: 16rem; }
+
+.man  {   margin: 0; }
+.maxs {   margin: .25rem; }
+.mas  {   margin: .5rem; }
+.mam  {   margin: 1rem; }
+.mal  {   margin: 2rem; }
+.maxl  {  margin: 4rem; }
+.maxxl {  margin: 8rem; }
+.maxxxl { margin: 16rem; }
+
+.mln  {   margin-left: 0; }
+.mlxs {   margin-left: .25rem; }
+.mls  {   margin-left: .5rem; }
+.mlm  {   margin-left: 1rem; }
+.mll  {   margin-left: 2rem; }
+.mlxl  {  margin-left: 4rem; }
+.mlxxl {  margin-left: 8rem; }
+.mlxxxl { margin-left: 16rem; }
+
+.mrn  {   margin-right: 0; }
+.mrxs {   margin-right: .25rem; }
+.mrs  {   margin-right: .5rem; }
+.mrm  {   margin-right: 1rem; }
+.mrl  {   margin-right: 2rem; }
+.mrxl  {  margin-right: 4rem; }
+.mrxxl {  margin-right: 8rem; }
+.mrxxxl { margin-right: 16rem; }
+
+.mbn  {   margin-bottom: 0; }
+.mbxs {   margin-bottom: .25rem; }
+.mbs  {   margin-bottom: .5rem; }
+.mbm  {   margin-bottom: 1rem; }
+.mbl  {   margin-bottom: 2rem; }
+.mbxl  {  margin-bottom: 4rem; }
+.mbxxl {  margin-bottom: 8rem; }
+.mbxxxl { margin-bottom: 16rem; }
+
+.mtn  {   margin-top: 0; }
+.mtxs {   margin-top: .25rem; }
+.mts  {   margin-top: .5rem; }
+.mtm  {   margin-top: 1rem; }
+.mtl  {   margin-top: 2rem; }
+.mtxl  {  margin-top: 4rem; }
+.mtxxl {  margin-top: 8rem; }
+.mtxxxl { margin-top: 16rem; }
+
+.mvn   {   margin-top: 0;      margin-bottom: 0rem; }
+.mvxs  {   margin-top: .25rem; margin-bottom: .25rem; }
+.mvs   {   margin-top: .5rem;  margin-bottom: .5rem; }
+.mvm   {   margin-top: 1rem;   margin-bottom: 1rem; }
+.mvl   {   margin-top: 2rem;   margin-bottom: 2rem; }
+.mvxl   {  margin-top: 4rem;   margin-bottom: 4rem; }
+.mvxxl  {  margin-top: 8rem;   margin-bottom: 8rem; }
+.mvxxxl  { margin-top: 16rem;  margin-bottom: 16rem; }
+
+.mhn   {   margin-left: 0;     margin-right: 0; }
+.mhs   {   margin-left: .5rem; margin-right: .5rem; }
+.mhm   {   margin-left: 1rem;  margin-right: 1rem; }
+.mhl   {   margin-left: 2rem;  margin-right: 2rem; }
+.mhxl   {  margin-left: 4rem;  margin-right: 4rem; }
+.mhxxl  {  margin-left: 8rem;  margin-right: 8rem; }
+.mhxxxl  { margin-left: 16rem; margin-right: 16rem; }
+
+
+/* ------------------------------------------------------- 
+    Utilities and helper classes
+------------------------------------------------------- */
+
+.mega {font-size: 4em;}
+.f1 {font-size: 2em;}
+.f2 {font-size: 1.5em;}
+.f3 {font-size: 1.5em;}
+.f4 {font-size: 1.25em;}
+.f5 {font-size: 1em;}
+.small {font-size: .875em;}
+
+@media screen and (min-width: 800px) {
+    .mega {font-size: 7em;}
+    .f1 {font-size: 3em;}
+}
+
+.tl  { text-align: left; }
+.tr  { text-align: right; }
+.tc  { text-align: center; }
+.tj  { text-align: justify; }
+
+.dn {     display: none; }
+.di {     display: inline; }
+.db {     display: block; }
+.dib {    display: inline-block; }
+
+.w1 {  width: 1em; }
+.w2 {  width: 2em; }
+.w3 {  width: 4em; }
+.w4 {  width: 8em; }
+.w5 {  width: 12em; }
+.w6 {  width: 16em; }
+
+.w-10 { width:  10%; }
+.w-20 { width:  20%; }
+.w-25 { width:  25%; }
+.w-33 { width:  33%; }
+.w-34 { width:  34%; }
+.w-40 { width:  40%; }
+.w-50 { width:  50%; }
+.w-60 { width:  60%; }
+.w-75 { width:  75%; }
+.w-80 { width:  80%; }
+.w-100 { width: 100%; }
+
+.w-auto { width: auto; }
+
+.lh-solid { line-height: 1; }
+.lh-title { line-height: 1.3; }
+.lh-copy  { line-height: 1.7; }
+
+/* I can haz floats?! 
+Remember clearfix .cf on parent */
+
+.fl { float: left;  display: inline; }
+.fr { float: right; display: inline; }
+.fn { float: none; }
+
+
+/* Clearfix 
+ref http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.cf:before,
+.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf {       *zoom: 1; }
+
+
+/* Vertical align text and inline elements */
+
+.v-base     { vertical-align: baseline; }
+.v-sub      { vertical-align: sub; }
+.v-sup      { vertical-align: super; }
+.v-txt-top  { vertical-align: text-top; }
+.v-txt-btm  { vertical-align: text-bottom; }
+.v-mid      { vertical-align: middle; }
+.v-top      { vertical-align: top; }
+.v-btm      { vertical-align: bottom; }
+</style>
+    <script>document.createElement('picture');</script>
+    <script async="true" defer="true" src="js/app-2016.js"></script>
+</head>
+
+  <header class="">
+    <div class="vulkan">
+      <div class="wrapper tc">
+        <h1 class="mega impact mbn ptl"><a href="index.html" class="homelink">Web Rebels</a></h1>
+        <h2 class="f2 mbn">2–3 June 2016 / Oslo, Norway</h2>
+      </div>
+    </div>
+  </header>
+<div class="">
+  <div class="wrapper pvl">
+    <h2 class="impact mtl">Our policies</h2>
+    <h3>Organization and organizers</h3>
+    <p>Web Rebels is <a href="http://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=997686659">registered as a non-profit organization</a> and is organized by unpaid volunteers.</p>
+    <p>Organizers shall facilitate and help both speakers and attendees so they will have the best conference experience possible.</p>
+
+    <h3>Sponsors</h3>
+    <p>Our <a href="sponsors/packages.html">sponsorship options</a> states what each sponsoring package contains. Even though we work with sponsors on things outside of that standard packages, the following sponsor policy apply:</p>
+    <ul>
+        <li>We do not sell speaker slots</li>
+        <li>We do not accept sales pitches masked as presentations</li>
+        <li>We do not differentiate between speakers from partners and independent speakers</li>
+    </ul>
+
+  <h3 id="ticketrefund">Ticket refund policy</h3>
+  <p>We have a refund policy for tickets which is <a href="https://github.com/webrebels/rebeladmin/wiki/TicketRefunds">described on our wiki</a>.
+    If you have any questions about this, please do not hesitate to contact us.</p>
+
+    <h3>Speakers</h3>
+    <p>For invited speakers we cover:</p>
+    <ul>
+        <li>All travel to and from the conference hotel / venue</li>
+        <li>Stay at the conference hotel during the conference</li>
+        <li>Admission to the conference and all conference related activities</li>
+        <li>Speakers dinner and all meals during the conference</li>
+        <li>All beverages on the pre conference party and conference party</li>
+        <li>A public transport card giving full access to all public transport in Oslo</li>
+    </ul>
+    <p>Upon invitation to speak at Web Rebels, each speaker is informed about the above. Though, each speaker are also informed that if the speakers employee would consider covering, in full or partly, the speakers travel cost we are more than happy to work out a sponsorship deal and what is saved upon such a deal are put back into making the conference better.</p>
+
+    <h3>General</h3>
+    <p>Everyone taking part in the Web Rebels Conference must abide by our <a href="about.html#coc">Code of Conduct</a>.</p>
+
+</div>
+</div>
+
+<footer class="ptxl pbm">
+  <div class="wrapper--wide">
+    <ul class="sponsors mbxl">
+      <li><a href="http://acando.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Acando"><img style="background-color:#FFF;width:200px;height:100px" src="img/sponsors/acando.svg" alt=""></a></li>
+      <li><a href="http://bouvet.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Bouvet"><img src="img/sponsors/bouvet.png" alt=""></a></li>
+      <li><a href="http://microsoft.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Microsoft"><img src="img/sponsors/microsoft.png" alt=""></a></li>
+      <li><a href="https://goo.gl/Z6VihS?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Schibsted"><img src="img/sponsors/schibsted_logo.png" width="200" height="100"alt="Schibsted logo"></a></li>
+      <li><a href="http://systek.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Systek"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/systek.svg" alt=""></a></li>
+      <li><a href="http://netliferesearch.com/?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Netlife Reseach"><img src="img/sponsors/netlife.png" alt=""></a></li>
+      <li><a href="http://bekk.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Bekk"><img src="img/sponsors/bekk.png" alt=""></a></li>
+      <li><a href="http://webstep.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Webstep"><img src="img/sponsors/webstep.png" alt=""></a></li>
+      <li><a href="http://appear.in?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="appear.in"><img src="img/sponsors/appearin.png" alt=""></a></li>
+      <li><a href="http://kodemaker.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Kodemaker"><img src="img/sponsors/kodemaker.png" alt=""></a></li>
+      <li><a href="http://knowit.no?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="KnowIt"><img src="img/sponsors/knowit.png" alt=""></a></li>
+      <li><a href="https://opbeat.com?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Opbeat"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/opbeat.svg" alt=""></a></li>
+      <li><a href="https://ride.com/?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Ride"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/ride.svg" alt=""></a></li>
+      <li><a href="https://www.mozilla.org/?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Mozilla"><img style="background-color:#FFF;width:200px;height:100px;padding:10px;" src="img/sponsors/mozilla.svg" alt=""></a></li>
+      <li><a href="https://www.finn.no/apply-here?utm_campaign=wr2016&utm_source=webrebels&utm_content=footer" title="Finn"><img style="background-color:#FFF;width:200px;height:100px" src="img/sponsors/finn.png" alt="Finn logo"></a></li>
+    </ul>
+    <ul class="menu tc">
+      <li class="menu-item"><a href="schedule.html">Schedule</a></li>
+      <li class="menu-item"><a href="location.html">Location</a></li>
+      <li class="menu-item"><a href="speakers.html">Speakers</a></li>
+      <li class="menu-item"><a href="sponsors.html">Sponsors</a></li>
+      <li class="menu-item"><a href="about.html">About</a></li>
+      <!--li class="menu-item"><a href="/tickets">Tickets</a></li-->
+      <li class="menu-item"></li>
+    </ul>
+    <ul class="menu tc">
+      <li class="menu-item"><a href="https://twitter.com/web_rebels">Twitter</a></li>
+      <li class="menu-item"><a href="http://lanyrd.com/2016/webrebels/">Lanyrd</a></li>
+      <li class="menu-item"><a href="http://flickr.com/webrebels">Photos</a></li>
+      <li class="menu-item"><a href="http://eepurl.com/bB12Ln">Newsletter</a></li>
+      <li class="menu-item"><a href="https://www.youtube.com/channel/UCM9cTs_C0PmTlHXTNrqTpnw">YouTube Channel</a></li>
+      <li class="menu-item"><a href="http://webrebels.tumblr.com">Tumblr</a></li>
+    </ul>
+  </div>
+  <p class="tc" style="color:white;">Web Rebels is part for the <a href="http://jsconf.com">JSConf family of events</a> and have a <a href="about.html#coc">Code of Conduct</a></p>
+  <ul class="menu tc">
+    <li class="menu-item tc"><p style="color:white;">Previous Web Rebels confs:</p></li>
+    <li class="menu-item"><a href="http://2012.webrebels.org/">2012</a></li>
+    <li class="menu-item"><a href="http://2013.webrebels.org/">2013</a></li>
+    <li class="menu-item"><a href="http://2014.webrebels.org/">2014</a></li>
+    <li class="menu-item"><a href="http://2015.webrebels.org/">2015</a></li>
+  </ul>
+</footer>
+
+<script>
+var cb = function() {
+    var l = document.createElement('link'); l.rel = 'stylesheet';
+    l.href = 'css/app-2016.css';
+    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(cb);
+else window.addEventListener('load', cb);
+</script>
+
+</body>
+</html>
