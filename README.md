@@ -1,5 +1,7 @@
 # webrebels-2016 [![Build Status](https://travis-ci.org/webrebels/web-rebels-2016.svg?branch=master)](https://travis-ci.org/webrebels/web-rebels-2016)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/webrebels/web-rebels-2016.svg)](https://greenkeeper.io/)
+
 
 # Archived sites
 
