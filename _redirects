@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://practical-gates-87cf87.netlify.com/* https://2016.webrebels.org/:splat 301!
+
+# These extra rules are required because HTTPS is not forced
+http://practical-gates-87cf87.netlify.com/* https://2016.webrebels.org/:splat 301!
